@@ -24,13 +24,20 @@ add_sources("Code_uber.cpp"
 add_sources("Components_uber.cpp"
     PROJECTS Game
     SOURCE_GROUP "Components"
+		"Components/SpawnPoint.cpp"
+		"Components/Bullet.h"		
+		"Components/SpawnPoint.h"
+
+	SOURCE_GROUP "Components\\\\Player"
 		"Components/Player.cpp"
 		"Components/PlayerInput.cpp"
 		"Components/PlayerUpdate.cpp"
-		"Components/SpawnPoint.cpp"
-		"Components/Bullet.h"
 		"Components/Player.h"
-		"Components/SpawnPoint.h"
+
+	SOURCE_GROUP "Components\\\\Items"
+		"Components/ItemComponent.cpp"
+		"Components/ItemComponent.h"
+		"Components/ItemProperties.h"
 )
 
 end_sources()
