@@ -158,7 +158,7 @@
             "foldersSplitter": "AAAA/wAAAAEAAAACAAAA+AAAASkB/////wEAAAABAA==",
             "foldersView": {
                 "selected": [
-                    "Objects/Characters/TestCharacter"
+                    "Objects/Characters/PlayerModel"
                 ]
             },
             "mainViewSplitter": "AAAA/wAAAAEAAAACAAAARAAAAQAB/////wEAAAABAA==",
@@ -180,7 +180,8 @@
         "history": [
             "/Animations/Mannequin/ADB",
             "/Animations/Mannequin/Preview",
-            "/Objects/Characters/TestCharacter"
+            "/Objects/Characters/TestCharacter",
+            "/Objects/Characters/PlayerModel"
         ]
     },
     "FavoritesHelper": {
@@ -193,6 +194,7 @@
     },
     "Material Editor": {
         "Recent Files": [
+            "Objects/Characters/PlayerModel/PlayerModel.mtl.cryasset",
             "Objects/Characters/TestCharacter/testcharacter.mtl.cryasset"
         ]
     },

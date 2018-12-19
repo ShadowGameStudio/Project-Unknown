@@ -5858,6 +5858,17 @@
 			]
 		},
 		{
+			"type": "Skeleton",
+			"guid": "d442bcfe-5ab8-cdf6-f001-f2d13ca9950d",
+			"name": "PlayerModel",
+			"timestamp": 1545257285,
+			"files": [ "Objects/Characters/PlayerModel/PlayerModel.chr" ],
+			"source": "Objects/Characters/PlayerModel/PlayerModel.dae.zip",
+			"metadata": "Objects/Characters/PlayerModel/PlayerModel.chr.cryasset",
+			"details": [ ],
+			"dependencies": [ ]
+		},
+		{
 			"type": "Character",
 			"guid": "ee332161-d23a-4b8a-4378-55991aa6c1e0",
 			"name": "firstperson",
@@ -6057,6 +6068,26 @@
 			]
 		},
 		{
+			"type": "Character",
+			"guid": "37ed14c2-961a-5268-70a7-55162c8d2048",
+			"name": "testcharacter",
+			"timestamp": 1545255738,
+			"files": [ "Objects/Characters/TestCharacter/testcharacter.cdf" ],
+			"source": "",
+			"metadata": "Objects/Characters/TestCharacter/testcharacter.cdf.cryasset",
+			"details": [ ],
+			"dependencies": [
+				{
+					"path": "Objects/Characters/TestCharacter/TestCharacter.chr",
+					"usageCount": 0
+				},
+				{
+					"path": "Objects/Characters/TestCharacter/TestCharacter.mtl",
+					"usageCount": 0
+				}
+			]
+		},
+		{
 			"type": "Skeleton",
 			"guid": "1c8bd039-ccf8-32c4-949b-c87cbf8753a7",
 			"name": "TestCharacter",
@@ -6066,6 +6097,53 @@
 			"metadata": "Objects/Characters/TestCharacter/TestCharacter.chr.cryasset",
 			"details": [ ],
 			"dependencies": [ ]
+		},
+		{
+			"type": "Material",
+			"guid": "46319d9d-67ef-7e1d-8fcf-673cca61f194",
+			"name": "TestCharacter",
+			"timestamp": 1545255499,
+			"files": [ "Objects/Characters/TestCharacter/TestCharacter.mtl" ],
+			"source": "",
+			"metadata": "Objects/Characters/TestCharacter/TestCharacter.mtl.cryasset",
+			"details": [
+				{ "key": "subMaterialCount", "value": "4" },
+				{ "key": "textureCount", "value": "8" }
+			],
+			"dependencies": [
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Shoes_Diffuse.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Shoes_Specular.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Top_Diffuse.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Top_Specular.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Bottom_Diffuse.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Bottom_Specular.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Body_Diffuse.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Body_Specular.dds",
+					"usageCount": 1
+				}
+			]
 		},
 		{
 			"type": "Mesh",
