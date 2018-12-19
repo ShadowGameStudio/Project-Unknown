@@ -49,6 +49,12 @@
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.h">
       <Filter>Components\Player\Components</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.cpp">
+      <Filter>Components\Items\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.h">
+      <Filter>Components\Items\Gameplay</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Programing\Project-Unknown\Code\CMakeLists.txt" />
@@ -59,14 +65,17 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Components\Items\Gameplay">
+      <UniqueIdentifier>{2A59948D-F196-3B96-984F-FC974B42A12E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Player\Components">
+      <UniqueIdentifier>{AC2D02BC-9C06-3126-9A7F-56C083C10935}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Components\Player">
       <UniqueIdentifier>{F6BB115F-9AB1-3AB7-80F5-788245E20EC6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Components\Items">
       <UniqueIdentifier>{7093C856-E78B-363F-BDFB-43FBA806B1C5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Player\Components">
-      <UniqueIdentifier>{AC2D02BC-9C06-3126-9A7F-56C083C10935}</UniqueIdentifier>
     </Filter>
     <Filter Include="Components">
       <UniqueIdentifier>{381546CF-2F42-321B-BC73-AACD594262B5}</UniqueIdentifier>

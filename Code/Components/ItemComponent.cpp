@@ -75,8 +75,21 @@ void SItemComponent::Pickup(IEntity * pNewOwner)
 	}
 
 	m_pOwnerEntity = pNewOwner;
-	
-	//Attach / Pickup item
+	m_pOwnerEntity->AttachChild(m_pEntity);
+
+	//Filter collision
+	pe_action_add_constraint constraint;
+	constraint.pt[0] = ZERO;
+	constraint.flags = constraint_ignore_buddy | constraint_inactive;
+
+	constraint.pBuddy = m_pOwnerEntity->GetPhysicalEntity();
+	childConstraintId = m_pEntity->GetPhysicalEntity()->Action(&constraint);
+
+	//Add filtering to owner
+	constraint.flags |= constraint_inactive;
+	constraint.pBuddy = m_pEntity->GetPhysicalEntity();
+	ownerConstraintId = m_pOwnerEntity->GetPhysicalEntity()->Action(&constraint);
+
 }
 
 //Gets and sets the items geometry

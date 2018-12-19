@@ -37,14 +37,16 @@ public:
 	virtual SItemProperties *GetProperties() { return &m_sItemProperties; }
 	virtual string GetItemName() { return GetProperties()->itemName; }
 	virtual int GetItemLevel() { return GetProperties()->itemLevel; }
+
 	virtual EItemType GetItemType() { return GetProperties()->eItemType; }
+	virtual float GetItemWeight() { return GetProperties()->sPhysicsProperties.mass; }
 
 	virtual void Drop(SItemComponent *pItemToDrop);
 	virtual bool IsPickable();
 
 	void Pickup(IEntity *pOwnerEntity);
 
-private:
+protected:
 
 	//Member vars
 	SItemProperties m_sItemProperties, m_sPrevItemProperties;

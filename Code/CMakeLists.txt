@@ -42,6 +42,10 @@ add_sources("Components_uber.cpp"
 	SOURCE_GROUP "Components\\\\Player\\\\Components"
 		"Components/InventoryComponent.cpp"
 		"Components/InventoryComponent.h"
+
+	SOURCE_GROUP "Components\\\\Items\\\\Gameplay"
+		"Components/MedicalItemComponent.cpp"
+		"Components/MedicalItemComponent.h"
 )
 
 end_sources()

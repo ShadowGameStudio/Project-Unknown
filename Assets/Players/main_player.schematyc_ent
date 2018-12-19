@@ -78,7 +78,7 @@
       <element element="1"/>
      </scale>
     </transform>
-    <properties Type="RenderAndCollider" Character="Objects/Characters/SampleCharacter/thirdperson.cdf" DatabasePath="Animations/Mannequin/ADB/FirstPerson.adb" ControllerDefPath="Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml" DefaultScope="FirstPersonCharacter" DefaultFragment="Idle" AnimDriven="false" GroundAlign="false">
+    <properties Type="RenderAndCollider" Character="Objects/Characters/TestCharacter/TestCharacter.cdf" DatabasePath="Animations/Mannequin/ADB/FirstPerson.adb" ControllerDefPath="Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml" DefaultScope="FirstPersonCharacter" DefaultFragment="Idle" AnimDriven="false" GroundAlign="false">
      <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
      <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="80"/>
     </properties>

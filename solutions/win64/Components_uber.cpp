@@ -8,4 +8,5 @@
 #include <C:/Programing/Project-Unknown/Code/Components/PlayerUpdate.cpp>
 #include <C:/Programing/Project-Unknown/Code/Components/ItemComponent.cpp>
 #include <C:/Programing/Project-Unknown/Code/Components/InventoryComponent.cpp>
+#include <C:/Programing/Project-Unknown/Code/Components/MedicalItemComponent.cpp>
 

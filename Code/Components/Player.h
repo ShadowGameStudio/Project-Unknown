@@ -13,6 +13,9 @@
 #include <DefaultComponents/Geometry/AdvancedAnimationComponent.h>
 #include <DefaultComponents/Input/InputComponent.h>
 
+#include "InventoryComponent.h"
+#include "ItemComponent.h"
+
 ////////////////////////////////////////////////////////
 // Represents a player participating in gameplay
 ////////////////////////////////////////////////////////
@@ -100,29 +103,44 @@ public:
 	// Reflect type to set a unique identifier for this component
 	static void ReflectType(Schematyc::CTypeDesc<CPlayerComponent>& desc);
 
+	//Main
 	void Revive();
+
+	//Getting
+	Cry::DefaultComponents::CAdvancedAnimationComponent *GetAnimations() { return m_pAnimationComponent; }
+	CInventoryComponent *GetInventory() { return m_pInventoryComponent; }
 
 protected:
 	//Update
 	void UpdateMovementRequest(float frameTime);
 	void UpdateLookDirectionRequest(float frameTime);
 	void UpdateAnimation(float frameTime);
-	void UpdateCamera(float frameTime);
 
+	void UpdateCamera(float frameTime);
+	void Update(float frameTime);
+	void CheckForPickup();
+
+	void ShowMessage(string name);
 
 	//Input
 	void InitializeInput();
 	void HandleInputFlagChange(TInputFlags flags, int activationMode, EInputFlagType type = EInputFlagType::Hold);
 
+	//Actions
+	void Action_Use(int activationMode);
+
 	//Main
 	void SpawnAtSpawnPoint();
 	void SetPlayerParams();
+	void Pickup(SItemComponent *pNewItem);
 
 protected:
 	Cry::DefaultComponents::CCameraComponent* m_pCameraComponent = nullptr;
 	Cry::DefaultComponents::CCharacterControllerComponent* m_pCharacterController = nullptr;
 	Cry::DefaultComponents::CAdvancedAnimationComponent* m_pAnimationComponent = nullptr;
 	Cry::DefaultComponents::CInputComponent* m_pInputComponent = nullptr;
+
+	CInventoryComponent* m_pInventoryComponent = nullptr;
 
 	FragmentID m_idleFragmentId;
 	FragmentID m_walkFragmentId;
@@ -141,4 +159,6 @@ protected:
 	Quat m_lookOrientation; //!< Should translate to head orientation in the future
 	float m_horizontalAngularVelocity;
 	MovingAverage<float, 10> m_averagedHorizontalAngularVelocity;
+
+	SItemComponent* m_pTargetItem = nullptr;
 };

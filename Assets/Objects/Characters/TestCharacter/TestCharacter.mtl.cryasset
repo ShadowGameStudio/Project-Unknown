@@ -1,0 +1,19 @@
+<AssetMetadata version="0" type="Material" guid="46319d9d-67ef-7e1d-8fcf-673cca61f194">
+ <Files>
+  <File path="TestCharacter.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">4</Detail>
+  <Detail name="textureCount">8</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Shoes_Diffuse.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Shoes_Specular.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Top_Diffuse.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Top_Specular.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Bottom_Diffuse.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Bottom_Specular.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Body_Diffuse.dds</Path>
+  <Path usageCount="1">C:\Users\xXRag\OneDrive\Desktop\fbxtool-master\TestCharacter.fbm\TestModel_Body_Specular.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -18,7 +18,7 @@
    <Fragment BlendOutDuration="0.2" Tags="">
     <AnimLayer>
      <Blend ExitTime="0" StartTime="0" Duration="0.2"/>
-     <Animation name="2DONE-BSpace_MoveStrafeRIFLE" flags="Loop"/>
+     <Animation name="mixamo com" flags="Loop"/>
     </AnimLayer>
    </Fragment>
   </Walk>

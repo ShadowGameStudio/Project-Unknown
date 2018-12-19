@@ -155,10 +155,10 @@
             "filters": {
                 "expanded": false
             },
-            "foldersSplitter": "AAAA/wAAAAEAAAACAAABAAAAAwAB/////wEAAAABAA==",
+            "foldersSplitter": "AAAA/wAAAAEAAAACAAAA+AAAASkB/////wEAAAABAA==",
             "foldersView": {
                 "selected": [
-                    "Objects/Characters/SampleCharacter"
+                    "Objects/Characters/TestCharacter"
                 ]
             },
             "mainViewSplitter": "AAAA/wAAAAEAAAACAAAARAAAAQAB/////wEAAAABAA==",
@@ -178,7 +178,9 @@
         "favorites": [
         ],
         "history": [
-            "/Animations/Mannequin/ADB"
+            "/Animations/Mannequin/ADB",
+            "/Animations/Mannequin/Preview",
+            "/Objects/Characters/TestCharacter"
         ]
     },
     "FavoritesHelper": {
@@ -189,8 +191,15 @@
             "Assets/Levels/example/example.level"
         ]
     },
+    "Material Editor": {
+        "Recent Files": [
+            "Objects/Characters/TestCharacter/testcharacter.mtl.cryasset"
+        ]
+    },
     "Schematyc Editor": {
         "Recent Files": [
+            "Players/main_player.schematyc_ent.cryasset",
+            "Items/bandage.schematyc_ent.cryasset",
             "Players/Main_Player.schematyc_ent.cryasset"
         ]
     }

@@ -22,9 +22,10 @@ CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterPlayer)
 
 void CPlayerComponent::Initialize()
 {
-	//Get or create the camera and input components
+	//Get or create the camera and other components
 	m_pInputComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CInputComponent>();
 	m_pCameraComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CCameraComponent>();
+	m_pInventoryComponent = m_pEntity->GetOrCreateComponentClass<CInventoryComponent>();
 
 	//Initialize the input and set up the base player params
 	InitializeInput();
@@ -39,7 +40,7 @@ void CPlayerComponent::Initialize()
 		//Create the animation component and set the needed values
 		m_pAnimationComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CAdvancedAnimationComponent>();
 		m_pAnimationComponent->SetMannequinAnimationDatabaseFile("Animations/Mannequin/ADB/FirstPerson.adb");
-		m_pAnimationComponent->SetCharacterFile("Objects/Characters/SampleCharacter/thirdperson.cdf");
+		m_pAnimationComponent->SetCharacterFile("Objects/Characters/SampleCharacter/firstperson.cdf");
 
 		m_pAnimationComponent->SetControllerDefinitionFile("Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml");
 		m_pAnimationComponent->SetDefaultFragmentName("Idle");
@@ -110,6 +111,9 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 
 		// Update the camera component offset
 		UpdateCamera(pCtx->fFrameTime);
+
+		//The main updates
+		Update(pCtx->fFrameTime);
 	}
 	break;
 	}
@@ -188,4 +192,26 @@ void CPlayerComponent::SpawnAtSpawnPoint()
 void CPlayerComponent::SetPlayerParams()
 {
 	m_pCameraComponent->SetNearPlane(0.0001f);
+}
+
+//Picks up an item
+void CPlayerComponent::Pickup(SItemComponent * pNewItem)
+{
+	//If the item is null, return
+	if (!pNewItem)
+	{
+		return;
+	}
+
+	//Add the item to the inventory
+	if (GetInventory()->AddItem(pNewItem))
+	{
+		//Pick up the item
+		pNewItem->Pickup(m_pEntity);
+
+		if (pNewItem->GetItemType() == eIT_Weapon)
+		{
+			//Attach to back
+		}
+	}
 }

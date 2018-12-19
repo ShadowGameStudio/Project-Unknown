@@ -1,7 +1,9 @@
 #include "Player.h"
 
 #define MOUSE_DELTA_TRESHOLD 0.0001f
+#define PICKUP_RANGE 0.5f
 
+//Updates the movement
 void CPlayerComponent::UpdateMovementRequest(float frameTime)
 {
 	// Don't handle input if we are in air
@@ -32,6 +34,7 @@ void CPlayerComponent::UpdateMovementRequest(float frameTime)
 	m_pCharacterController->AddVelocity(GetEntity()->GetWorldRotation() * velocity);
 }
 
+//Updates the player direction
 void CPlayerComponent::UpdateLookDirectionRequest(float frameTime)
 {
 	const float rotationSpeed = 0.002f;
@@ -67,6 +70,7 @@ void CPlayerComponent::UpdateLookDirectionRequest(float frameTime)
 	m_mouseDeltaRotation = ZERO;
 }
 
+//Updates the animations
 void CPlayerComponent::UpdateAnimation(float frameTime)
 {
 	const float angularVelocityTurningThreshold = 0.174; // [rad/s]
@@ -102,6 +106,7 @@ void CPlayerComponent::UpdateAnimation(float frameTime)
 	GetEntity()->SetPosRotScale(GetEntity()->GetWorldPos(), correctedOrientation, Vec3(1, 1, 1));
 }
 
+//Updates the camera
 void CPlayerComponent::UpdateCamera(float frameTime)
 {
 	// Start with updating look orientation from the latest input
@@ -142,3 +147,72 @@ void CPlayerComponent::UpdateCamera(float frameTime)
 
 	m_pCameraComponent->SetTransformMatrix(localTransform);
 }
+
+//Main update function
+void CPlayerComponent::Update(float frameTime)
+{
+	//Checks if the are items to pickup nearby
+	CheckForPickup();
+}
+
+//Checks if there is items to pickup nearby
+void CPlayerComponent::CheckForPickup()
+{
+	//Create som base variables
+	Vec3 pickupOrigin = m_pEntity->GetWorldPos() + (m_pEntity->GetForwardDir() * PICKUP_RANGE);
+	IPhysicalEntity **pEntityList = NULL;
+	int num = gEnv->pEntitySystem->GetPhysicalEntitiesInBox(pickupOrigin, PICKUP_RANGE, pEntityList);
+
+	float lastDist = 10.f;
+	float curDist = 0.f;
+	SItemComponent *pNewItem = nullptr;
+
+	//Go through the items and check if it's an pickable item
+	//If it is set the item to the new item and set the distance to the object
+	for (int i = 0; i < num; i++)
+	{
+		if (IPhysicalEntity *pPhys = pEntityList[i])
+		{
+			if (IEntity *pInteractingEntity = gEnv->pEntitySystem->GetEntityFromPhysics(pPhys))
+			{
+				if (SItemComponent *pPickupItem = pInteractingEntity->GetComponent<SItemComponent>())
+				{
+					if (pPickupItem->IsPickable())
+					{
+						const Vec3 newItemPos = pInteractingEntity->GetWorldPos();
+						const Vec3 diff = newItemPos - m_pEntity->GetWorldPos();
+
+						curDist = sqrt(powf(diff.x, 2.f) + powf(diff.y, 2.f));
+
+						if (curDist < lastDist)
+						{
+							lastDist = curDist;
+							pNewItem = pPickupItem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Check that it isn't null
+	if (pNewItem)
+	{
+		m_pTargetItem = pNewItem;
+		ShowMessage(m_pTargetItem->GetItemName());
+	}
+}
+
+//Shows a pickup message
+void CPlayerComponent::ShowMessage(string name)
+{
+	Vec2 screenMid = { gEnv->pRenderer->GetWidth() / 2.f, gEnv->pRenderer->GetHeight() / 2.f };
+	ColorF pfWhite = { 1.f, 1.f, 1.f, 1.f };
+
+	string pickupMessage = "Pick up " + name;
+
+	gEnv->pRenderer->GetIRenderAuxGeom()->Draw2dLabel(screenMid.x, screenMid.y, 1.5f, pfWhite, true, pickupMessage);
+
+}
+
+
