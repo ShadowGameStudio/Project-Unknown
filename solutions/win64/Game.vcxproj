@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -45,7 +45,7 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros">
+  <PropertyGroup Label="UserMacros" >
   </PropertyGroup>
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
@@ -276,7 +276,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Programing\Project-Unknown\Code\GamePlugin.cpp" />
-    <ClCompile Include="C:\Programing\Project-Unknown\Code\StdAfx.cpp" />
+    <ClCompile Include="C:\Programing\Project-Unknown\Code\StdAfx.cpp"  />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\GamePlugin.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\StdAfx.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\SpawnPoint.cpp" />
@@ -288,10 +288,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\Player.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.cpp" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.h" />
-    <ClInclude Include="..\..\Code\Components\ItemProperties.h" />
-    <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Code_uber.cpp" />
-    <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Components_uber.cpp" />
-    <ResourceCompile Include="C:\Programing\Project-Unknown\solutions\win64\Game.autogen.rc" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemProperties.h" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.h" />
+    <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Code_uber.cpp"  />
+    <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Components_uber.cpp"  />
+    <ResourceCompile Include="C:\Programing\Project-Unknown\solutions\win64\Game.autogen.rc"  />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

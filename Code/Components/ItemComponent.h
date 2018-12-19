@@ -11,7 +11,7 @@ Project : Project Unknown
 Purpose : The base component for items
 -------------------------------------------------------------------------------*/
 
-class SItemComponent final : public IEntityComponent
+class SItemComponent : public IEntityComponent
 {
 public:
 	SItemComponent() = default;
@@ -37,9 +37,10 @@ public:
 	virtual SItemProperties *GetProperties() { return &m_sItemProperties; }
 	virtual string GetItemName() { return GetProperties()->itemName; }
 	virtual int GetItemLevel() { return GetProperties()->itemLevel; }
+	virtual EItemType GetItemType() { return GetProperties()->eItemType; }
 
 	virtual void Drop(SItemComponent *pItemToDrop);
-	virtual void IsPickable();
+	virtual bool IsPickable();
 
 	void Pickup(IEntity *pOwnerEntity);
 

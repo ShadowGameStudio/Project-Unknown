@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="C:\Programing\Project-Unknown\Code\StdAfx.cpp" />
@@ -40,8 +40,14 @@
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.h">
       <Filter>Components\Items</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Components\ItemProperties.h">
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemProperties.h">
       <Filter>Components\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.cpp">
+      <Filter>Components\Player\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.h">
+      <Filter>Components\Player\Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +64,9 @@
     </Filter>
     <Filter Include="Components\Items">
       <UniqueIdentifier>{7093C856-E78B-363F-BDFB-43FBA806B1C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Player\Components">
+      <UniqueIdentifier>{AC2D02BC-9C06-3126-9A7F-56C083C10935}</UniqueIdentifier>
     </Filter>
     <Filter Include="Components">
       <UniqueIdentifier>{381546CF-2F42-321B-BC73-AACD594262B5}</UniqueIdentifier>

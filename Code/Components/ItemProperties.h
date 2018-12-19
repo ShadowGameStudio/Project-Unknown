@@ -53,6 +53,28 @@ static void ReflectType(Schematyc::CTypeDesc<SPhysicsProperties>& desc)
 	desc.AddMember(&SPhysicsProperties::mass, 'mass', "Mass", "Mass", "The mass of the item", 1.f);
 }
 
+enum EItemType
+{
+	eIT_Food,
+	eIT_Weapon,
+	eIT_Normal
+};
+
+static void ReflectType(Schematyc::CTypeDesc<EItemType>& desc)
+{
+	desc.SetGUID("{975F5611-E6A8-4DE7-BC9A-65F832645BE9}"_cry_guid);
+	desc.SetLabel("Item type");
+	desc.SetDescription("Sets the items type");
+	
+	desc.SetDefaultValue(EItemType::eIT_Normal);
+	desc.SetFlags(Schematyc::ETypeFlags::Switchable);
+	desc.AddConstant(EItemType::eIT_Normal, "Normal", "Normal");
+
+	desc.AddConstant(EItemType::eIT_Weapon, "Weapon", "Weapon");
+	desc.AddConstant(EItemType::eIT_Food, "Food", "Food");
+
+}
+
 //Main properties
 struct SItemProperties
 {
@@ -61,6 +83,7 @@ struct SItemProperties
 
 	SRenderProperties sRenderProperties, sPrevRenderProperties;
 	SPhysicsProperties sPhysicsProperties;
+	EItemType eItemType;
 
 	//Item specific
 	int itemLevel;
@@ -76,4 +99,6 @@ static void ReflectType(Schematyc::CTypeDesc<SItemProperties>& desc)
 	desc.AddMember(&SItemProperties::sRenderProperties, 'renp', "RenderProperties", "Render Properties", "The items render properties", SRenderProperties());
 	desc.AddMember(&SItemProperties::sPhysicsProperties, 'spp', "PhysicsProperties", "Physics Properties", "The items physics properties", SPhysicsProperties());
 	desc.AddMember(&SItemProperties::itemLevel, 'il', "ItemLevel", "Item Level", "The items level", 1);
+
+	desc.AddMember(&SItemProperties::eItemType, 'eit', "ItemType", "Item Type", "Sets what type of item this should be", EItemType());
 }
