@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Material" guid="34ae9632-f5c9-3e40-d7e1-6b13c5ecd599">
+<AssetMetadata version="0" type="Material" guid="c46c8697-00de-a27c-73c9-5023df21dc9b">
  <Files>
   <File path="defaultWeapon.mtl"/>
  </Files>
@@ -7,6 +7,6 @@
   <Detail name="textureCount">1</Detail>
  </Details>
  <Dependencies>
-  <Path usageCount="1">textures/defaults/grey.dds</Path>
+  <Path>engineassets/textures/white.dds</Path>
  </Dependencies>
 </AssetMetadata>

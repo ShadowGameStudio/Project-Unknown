@@ -13,9 +13,6 @@
 #include <DefaultComponents/Geometry/AdvancedAnimationComponent.h>
 #include <DefaultComponents/Input/InputComponent.h>
 
-#include "InventoryComponent.h"
-#include "ItemComponent.h"
-
 ////////////////////////////////////////////////////////
 // Represents a player participating in gameplay
 ////////////////////////////////////////////////////////
@@ -101,46 +98,30 @@ public:
 	// ~IEntityComponent
 
 	// Reflect type to set a unique identifier for this component
-	static void ReflectType(Schematyc::CTypeDesc<CPlayerComponent>& desc);
+	static void ReflectType(Schematyc::CTypeDesc<CPlayerComponent>& desc)
+	{
+		desc.SetGUID("{63F4C0C6-32AF-4ACB-8FB0-57D45DD14725}"_cry_guid);
+	}
 
-	//Main
 	void Revive();
 
-	//Getting
-	Cry::DefaultComponents::CAdvancedAnimationComponent *GetAnimations() { return m_pAnimationComponent; }
-	CInventoryComponent *GetInventory() { return m_pInventoryComponent; }
-
 protected:
-	//Update
 	void UpdateMovementRequest(float frameTime);
 	void UpdateLookDirectionRequest(float frameTime);
 	void UpdateAnimation(float frameTime);
-
 	void UpdateCamera(float frameTime);
-	void Update(float frameTime);
-	void CheckForPickup();
 
-	void ShowMessage(string name);
-
-	//Input
-	void InitializeInput();
-	void HandleInputFlagChange(TInputFlags flags, int activationMode, EInputFlagType type = EInputFlagType::Hold);
-
-	//Actions
-	void Action_Use(int activationMode);
-
-	//Main
 	void SpawnAtSpawnPoint();
-	void SetPlayerParams();
-	void Pickup(SItemComponent *pNewItem);
+
+	void CreateWeapon(const char *name);
+
+	void HandleInputFlagChange(TInputFlags flags, int activationMode, EInputFlagType type = EInputFlagType::Hold);
 
 protected:
 	Cry::DefaultComponents::CCameraComponent* m_pCameraComponent = nullptr;
 	Cry::DefaultComponents::CCharacterControllerComponent* m_pCharacterController = nullptr;
 	Cry::DefaultComponents::CAdvancedAnimationComponent* m_pAnimationComponent = nullptr;
 	Cry::DefaultComponents::CInputComponent* m_pInputComponent = nullptr;
-
-	CInventoryComponent* m_pInventoryComponent = nullptr;
 
 	FragmentID m_idleFragmentId;
 	FragmentID m_walkFragmentId;
@@ -150,15 +131,9 @@ protected:
 	Vec2 m_mouseDeltaRotation;
 	MovingAverage<Vec2, 10> m_mouseDeltaSmoothingFilter;
 
-	const float m_rotationSpeed = 0.002f;
-
-	int m_cameraJointId = -1;
-
 	FragmentID m_activeFragmentId;
 
 	Quat m_lookOrientation; //!< Should translate to head orientation in the future
 	float m_horizontalAngularVelocity;
 	MovingAverage<float, 10> m_averagedHorizontalAngularVelocity;
-
-	SItemComponent* m_pTargetItem = nullptr;
 };

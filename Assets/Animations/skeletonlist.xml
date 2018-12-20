@@ -1,4 +1,4 @@
 <SkeletonList>
  <Skeleton name="motusTest" file="Objects/Characters/SampleCharacter/skelProxy.chr"/>
- <Skeleton name="testCharacter" file="Objects/Characters/TestCharacter/TestCharacter.chr"/>
+ <Skeleton name="testPlayer" file="Objects/Characters/TestPlayer/TestPlayer.chr"/>
 </SkeletonList>

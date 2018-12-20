@@ -1,9 +1,9 @@
 <Level WaterColor="16711680" SandboxVersion="5.5.2.425">
- <View ViewerPos="80.367073,42.625759,48.788334" ViewerAngles="-0.62119091,0,0.79780632"/>
- <Fog Fog="" Terrain="" EnvState="" VolFogShadows="" CloudShadows="" VolumetricCloud="" SkyBox="" Ocean="" OceanAnimation="" Moon="" DynTexSource="" Total_Illumination_v2=""/>
+ <View ViewerPos="0,0,0" ViewerAngles="0,-0,0"/>
+ <Fog ViewDistance="8000" ViewDistanceLowSpec="1000" LDRGlobalDensMult="1.0"/>
  <Missions Current="Mission0">
   <Mission Name="Mission0" Description="" PlayerEquipPack="" Script="" MissionTime="12:00">
-   <ObjectLayers LayerVersion="2" Current="Main" CurrentGUID="1dd3a559-e494-4742-a501-7dab4afbbf72"/>
+   <ObjectLayers LayerVersion="2"/>
    <Objects />
    <Lighting SunRotation="240" SunHeight="80" Algorithm="3" Lighting="1" Shadows="1" ShadowIntensity="100" ILQuality="1" HemiSamplQuality="5" Longitude="90" DawnTime="355" DawnDuration="10" DuskTime="365" DuskDuration="10" SunVector="-0.51961529,-0.29999995,-0.79999989"/>
    <Weapons>

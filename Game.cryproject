@@ -2,8 +2,8 @@
   "version": 3,
   "type": "",
   "info": {
-    "name": "ProjectUnknown",
-    "guid": "18848a42-b446-94c0-8317-cb2b0eff8774"
+    "name": "Test",
+    "guid": "e3865104-7321-f784-b95f-43e034a4e34b"
   },
   "content": {
     "assets": [
@@ -14,7 +14,7 @@
     ],
     "libs": [
       {
-        "name": "First Person Shooter Game Template",
+        "name": "Third Person Shooter Game Template",
         "shared": {
           "any": "",
           "win_x64": "",
@@ -55,10 +55,6 @@
     {
       "name": "sys_target_platforms",
       "value": "pc,ps4,xboxone,linux"
-    },
-    {
-      "name": "cl_DefaultNearPlane",
-      "value": "0.05"
     }
   ],
   "console_commands": []

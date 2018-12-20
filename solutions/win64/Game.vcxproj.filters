@@ -1,90 +1,51 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Programing\Project-Unknown\Code\StdAfx.cpp" />
-    <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Code_uber.cpp">
+    <ClCompile Include="C:\Programing\Test (1)\Code\StdAfx.cpp" />
+    <ClCompile Include="C:\Programing\Test (1)\solutions\win64\Code_uber.cpp">
       <Filter>UBER FILES</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Components_uber.cpp">
+    <ClCompile Include="C:\Programing\Test (1)\solutions\win64\Components_uber.cpp">
       <Filter>UBER FILES</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\GamePlugin.cpp" />
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\GamePlugin.h" />
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\StdAfx.h" />
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\SpawnPoint.cpp">
+    <ClInclude Include="C:\Programing\Test (1)\Code\GamePlugin.cpp" />
+    <ClInclude Include="C:\Programing\Test (1)\Code\GamePlugin.h" />
+    <ClInclude Include="C:\Programing\Test (1)\Code\StdAfx.h" />
+    <ClInclude Include="C:\Programing\Test (1)\Code\Components\Player.cpp">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\Bullet.h">
+    <ClInclude Include="C:\Programing\Test (1)\Code\Components\SpawnPoint.cpp">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\SpawnPoint.h">
+    <ClInclude Include="C:\Programing\Test (1)\Code\Components\Bullet.h">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\Player.cpp">
-      <Filter>Components\Player</Filter>
+    <ClInclude Include="C:\Programing\Test (1)\Code\Components\Player.h">
+      <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\PlayerInput.cpp">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\PlayerUpdate.cpp">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\Player.h">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.cpp">
-      <Filter>Components\Items</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.h">
-      <Filter>Components\Items</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemProperties.h">
-      <Filter>Components\Items</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.cpp">
-      <Filter>Components\Player\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\InventoryComponent.h">
-      <Filter>Components\Player\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.cpp">
-      <Filter>Components\Items\Gameplay</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.h">
-      <Filter>Components\Items\Gameplay</Filter>
+    <ClInclude Include="C:\Programing\Test (1)\Code\Components\SpawnPoint.h">
+      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Programing\Project-Unknown\Code\CMakeLists.txt" />
+    <CustomBuild Include="C:\Programing\Test (1)\Code\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Programing\Project-Unknown\solutions\win64\Game.autogen.rc">
+    <ResourceCompile Include="C:\Programing\Test (1)\solutions\win64\Game.autogen.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Components\Items\Gameplay">
-      <UniqueIdentifier>{2A59948D-F196-3B96-984F-FC974B42A12E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Player\Components">
-      <UniqueIdentifier>{AC2D02BC-9C06-3126-9A7F-56C083C10935}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Player">
-      <UniqueIdentifier>{F6BB115F-9AB1-3AB7-80F5-788245E20EC6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Items">
-      <UniqueIdentifier>{7093C856-E78B-363F-BDFB-43FBA806B1C5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Components">
-      <UniqueIdentifier>{381546CF-2F42-321B-BC73-AACD594262B5}</UniqueIdentifier>
+      <UniqueIdentifier>{8261EA49-22A7-3E76-B450-B7F772C588D1}</UniqueIdentifier>
     </Filter>
     <Filter Include="UBER FILES">
-      <UniqueIdentifier>{6F330AEE-63DB-384A-9265-199A03FC7596}</UniqueIdentifier>
+      <UniqueIdentifier>{6889F31F-0742-3B79-94D0-C7B3850B62EB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{F8F3A46B-2EA7-3E85-9184-AFB27ABCA2D2}</UniqueIdentifier>
+      <UniqueIdentifier>{5361DAF0-5D23-328F-B066-F267E4F678BA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

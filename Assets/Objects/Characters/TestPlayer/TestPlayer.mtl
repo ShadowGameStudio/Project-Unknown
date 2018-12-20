@@ -1,0 +1,37 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="Bodymat" MtlFlags="524416" Shader="Illum" GenMask="C0400000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Characters/TestPlayer/Textures/testplayer_body_diff.dds"/>
+    <Texture Map="Bumpmap" File="Objects/Characters/TestPlayer/Textures/testplayer_body_ddna.dds"/>
+    <Texture Map="Specular" File="Objects/Characters/TestPlayer/Textures/testplayer_body_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+  <Material Name="Bottommat" MtlFlags="524416" Shader="Illum" GenMask="C0400000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Characters/TestPlayer/Textures/testplayer_bottom_diff.dds"/>
+    <Texture Map="Bumpmap" File="Objects/Characters/TestPlayer/Textures/testplayer_bottom_ddna.dds"/>
+    <Texture Map="Specular" File="Objects/Characters/TestPlayer/Textures/testplayer_bottom_ spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+  <Material Name="Topmat" MtlFlags="524416" Shader="Illum" GenMask="C0400000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Characters/TestPlayer/Textures/testplayer_top_diff.dds"/>
+    <Texture Map="Bumpmap" File="Objects/Characters/TestPlayer/Textures/testplayer_top_ddna.dds"/>
+    <Texture Map="Specular" File="Objects/Characters/TestPlayer/Textures/testplayer_top_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+  <Material Name="Shoesmat" MtlFlags="524416" Shader="Illum" GenMask="C0400000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Characters/TestPlayer/Textures/testplayer_shoes_diff.dds"/>
+    <Texture Map="Bumpmap" File="Objects/Characters/TestPlayer/Textures/testplayer_shoes_ddna.dds"/>
+    <Texture Map="Specular" File="Objects/Characters/TestPlayer/Textures/testplayer_shoes_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+</Material>

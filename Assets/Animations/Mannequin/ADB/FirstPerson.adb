@@ -10,7 +10,7 @@
    <Fragment BlendOutDuration="0.2" Tags="">
     <AnimLayer>
      <Blend ExitTime="0" StartTime="0" Duration="0.2"/>
-     <Animation name="rifleAim_idle_3p" flags="Loop"/>
+     <Animation name="idle" flags="Loop"/>
     </AnimLayer>
    </Fragment>
   </Idle>
@@ -18,7 +18,7 @@
    <Fragment BlendOutDuration="0.2" Tags="">
     <AnimLayer>
      <Blend ExitTime="0" StartTime="0" Duration="0.2"/>
-     <Animation name="mixamo com" flags="Loop"/>
+     <Animation name="walk" flags="Loop"/>
     </AnimLayer>
    </Fragment>
   </Walk>

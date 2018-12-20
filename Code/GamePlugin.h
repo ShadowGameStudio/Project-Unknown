@@ -1,6 +1,7 @@
 #pragma once
 
 #include <CrySystem/ICryPlugin.h>
+#include <CryGame/IGameFramework.h>
 #include <CryEntitySystem/IEntityClass.h>
 #include <CryNetwork/INetwork.h>
 
@@ -16,7 +17,7 @@ class CGamePlugin
 {
 public:
 	CRYINTERFACE_SIMPLE(Cry::IEnginePlugin)
-	CRYGENERATE_SINGLETONCLASS_GUID(CGamePlugin, "FirstPersonShooter", "{FC9BD884-49DE-4494-9D64-191734BBB7E3}"_cry_guid)
+	CRYGENERATE_SINGLETONCLASS_GUID(CGamePlugin, "ThirdPersonShooter", "{0900F201-49F3-4B3C-81D1-0C91CF3C8FDA}"_cry_guid)
 
 	virtual ~CGamePlugin();
 	

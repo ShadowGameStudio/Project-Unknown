@@ -1,5 +1,5 @@
-<Level WaterColor="16711680" SandboxVersion="5.5.2.425">
- <View ViewerPos="67.28508,54.174751,33.919735" ViewerAngles="0.0077989977,-0,2.0508058"/>
+<Level WaterColor="16711680" SandboxVersion="1.0.0.0">
+ <View ViewerPos="63.80167,48.789761,35.869091" ViewerAngles="-0.30399385,0,-0.79001683"/>
  <Fog Fog="" Terrain="" EnvState="" VolFogShadows="" CloudShadows="" VolumetricCloud="" SkyBox="" Ocean="" OceanAnimation="" Moon="" DynTexSource="" Total_Illumination_v2=""/>
  <Missions Current="Mission0">
   <Mission Name="Mission0" Description="" PlayerEquipPack="" Script="" MissionTime="12:00">
@@ -20,7 +20,7 @@
   <LevelLibrary Name="Level"/>
  </PrefabsLibrary>
  <ParticleLibs>
-  <LevelLibrary Name="Level" SandboxVersion="5.5.2.425"/>
+  <LevelLibrary Name="Level" SandboxVersion="1.0.0.0"/>
  </ParticleLibs>
  <FlareLibs>
   <LevelLibrary Name="Level"/>

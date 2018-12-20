@@ -1,9 +1,0 @@
-<AssetMetadata version="0" type="Character" guid="9b3fc04d-dff5-c4f9-8c95-d87c0eed010a">
- <Files>
-  <File path="playermodel.cdf"/>
- </Files>
- <Details />
- <Dependencies>
-  <Path>Objects/Characters/PlayerModel/PlayerModel.chr</Path>
- </Dependencies>
-</AssetMetadata>

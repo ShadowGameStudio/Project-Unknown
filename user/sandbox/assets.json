@@ -4862,9 +4862,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "55f2f3e1-e350-d4e3-93ff-ea4c383ee5c6",
+			"guid": "2c665e1c-3eb3-84f9-4d3d-4a90a3da70fe",
 			"name": "reference_preview_0",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/editor/reference_preview_0.caf" ],
 			"source": "",
 			"metadata": "Animations/editor/reference_preview_0.caf.cryasset",
@@ -4873,9 +4873,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "21388f19-6ece-22a0-efad-d26ff616017c",
+			"guid": "d98bd87e-80ac-5efd-e106-e2966ac7d605",
 			"name": "FirstPersonControllerDefinition",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml" ],
 			"source": "",
 			"metadata": "Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml.cryasset",
@@ -4884,9 +4884,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "aa2410fe-ba1c-4cc3-7248-61a18b51ad8a",
+			"guid": "4fb8921f-e98a-6bf4-38d7-ff876089148a",
 			"name": "PlayerFragmentIds",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/Mannequin/ADB/PlayerFragmentIds.xml" ],
 			"source": "",
 			"metadata": "Animations/Mannequin/ADB/PlayerFragmentIds.xml.cryasset",
@@ -4895,9 +4895,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "c08b4200-3710-a09c-c2db-db7f82315116",
+			"guid": "05f32513-7015-eba6-7ed3-632b599def30",
 			"name": "PlayerTags",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/Mannequin/ADB/PlayerTags.xml" ],
 			"source": "",
 			"metadata": "Animations/Mannequin/ADB/PlayerTags.xml.cryasset",
@@ -4906,9 +4906,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "9f05792b-ae0b-4734-f71c-d0edfb988488",
+			"guid": "63ea36bd-4f59-4a62-04e4-b55a83877d8b",
 			"name": "Player",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/Mannequin/Preview/Player.xml" ],
 			"source": "",
 			"metadata": "Animations/Mannequin/Preview/Player.xml.cryasset",
@@ -4917,9 +4917,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "7e950349-2411-878a-4600-0dd4e864a3bd",
+			"guid": "869cadc1-63cf-97fa-9a0a-cb380d8c16a8",
 			"name": "idle_to_jog_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/ide2Move/idle_to_jog_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/ide2Move/idle_to_jog_3p.caf.cryasset",
@@ -4928,9 +4928,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "8a4df49c-621c-732f-3434-b525f833f324",
+			"guid": "bd2f4ad2-46f1-4167-b4c8-dab3c9b32141",
 			"name": "idle_to_run_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/ide2Move/idle_to_run_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/ide2Move/idle_to_run_3p.caf.cryasset",
@@ -4939,9 +4939,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "5c64ede3-a3e0-556c-f0e3-95c41697e31c",
+			"guid": "3b0b5077-1b02-ea4e-2c3c-34edf77a3e83",
 			"name": "idle_to_walk_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/ide2Move/idle_to_walk_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/ide2Move/idle_to_walk_3p.caf.cryasset",
@@ -4950,9 +4950,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "58197c90-6b50-9c92-c106-8afc460c8fe2",
+			"guid": "7233d4ea-c6be-401d-9c8b-4c06793df902",
 			"name": "jog_to_idle_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/ide2Move/jog_to_idle_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/ide2Move/jog_to_idle_3p.caf.cryasset",
@@ -4961,9 +4961,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "11558e91-6263-449a-f162-2e1294400e5e",
+			"guid": "eb9a1d33-f7b8-5884-5741-c53e8f8f5f13",
 			"name": "run_to_idle_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/ide2Move/run_to_idle_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/ide2Move/run_to_idle_3p.caf.cryasset",
@@ -4972,9 +4972,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "1bd6eab7-6b4c-e99b-21c6-e01415f353eb",
+			"guid": "f96365eb-78b4-7da2-e59c-1d59f2c315a7",
 			"name": "walk_to_idle_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/ide2Move/walk_to_idle_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/ide2Move/walk_to_idle_3p.caf.cryasset",
@@ -4983,9 +4983,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "281c0eac-ee8e-09d8-9a90-fcf7a84a2bb9",
+			"guid": "a93a9d0d-8fa2-6ac2-c4ef-fb3ffca43c72",
 			"name": "idle_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/idle_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/idle_3p.caf.cryasset",
@@ -4994,9 +4994,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "127507fd-d79c-1091-33fb-38eac631da57",
+			"guid": "deb576b2-b449-e5ba-dd5b-44a4cea03860",
 			"name": "jog_bck_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/jog_bck_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/jog_bck_3p.caf.cryasset",
@@ -5005,9 +5005,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "6c73a01b-a00c-fc6f-e86f-4ac82ef866ec",
+			"guid": "6b30d7cb-54b3-c62e-993c-9e46715125aa",
 			"name": "jog_fwd_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/jog_fwd_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/jog_fwd_3p.caf.cryasset",
@@ -5016,9 +5016,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "cb177e5e-55d7-6b4b-2b76-ce8cf5a22240",
+			"guid": "43d6dbdc-9dd4-feb7-1e82-32966d80a6b8",
 			"name": "rifleAim_idle_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/rifleAnims/rifleAim_idle_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/rifleAim_idle_3p.caf.cryasset",
@@ -5027,9 +5027,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "dd827a4e-3d8c-b81d-328a-64e8f6da78f7",
+			"guid": "ddec00fd-a8f6-8855-42fc-6970da361b88",
 			"name": "rifleWalkAim_bwd_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/rifleAnims/rifleWalkAim_bwd_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/rifleWalkAim_bwd_3p.caf.cryasset",
@@ -5038,9 +5038,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "594292c5-0bdb-c8e1-8206-c3b59b0011a3",
+			"guid": "79c8a532-b780-c105-f9e3-5830bfc79517",
 			"name": "rifleWalkAim_fwd_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/rifleAnims/rifleWalkAim_fwd_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/rifleWalkAim_fwd_3p.caf.cryasset",
@@ -5049,9 +5049,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "396bc618-57d7-4436-98b4-354bb349fbef",
+			"guid": "1788049e-9718-e2cb-020e-faba0e965375",
 			"name": "stepRifleAimRotate_lft_90_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/rifleAnims/stepRifleAimRotate_lft_90_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/stepRifleAimRotate_lft_90_3p.caf.cryasset",
@@ -5060,9 +5060,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "35d7b1cb-3d2a-a209-3ca6-be73d63f904a",
+			"guid": "0647df36-a14b-e8f5-53be-f7b1729cfe4f",
 			"name": "stepRifleAimRotate_rgt_90_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/rifleAnims/stepRifleAimRotate_rgt_90_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/stepRifleAimRotate_rgt_90_3p.caf.cryasset",
@@ -5071,9 +5071,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "61482c2f-7372-05ea-d139-771e2d8309b1",
+			"guid": "010bf3b7-c686-7096-9a88-e2b9203315a8",
 			"name": "walkcrossRifleAim_bck_lft_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/rifleAnims/walkcrossRifleAim_bck_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/walkcrossRifleAim_bck_lft_3p.caf.cryasset",
@@ -5082,9 +5082,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "6178dc05-6ecc-2ff0-fe38-b0f1e8c373e9",
+			"guid": "18b9ec3e-4638-653f-80d1-b91e56c0980b",
 			"name": "walkcrossRifleAim_bck_rgt_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/rifleAnims/walkcrossRifleAim_bck_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/walkcrossRifleAim_bck_rgt_3p.caf.cryasset",
@@ -5093,9 +5093,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "9aa0d7ca-7b33-f2f9-b54f-55b5d4e69eeb",
+			"guid": "1bd6e215-5956-99f2-2877-25bbe47a5767",
 			"name": "walkcrossRifleAim_fwd_lft_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/rifleAnims/walkcrossRifleAim_fwd_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/walkcrossRifleAim_fwd_lft_3p.caf.cryasset",
@@ -5104,9 +5104,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "7de63714-625f-0cb6-875a-a7827ea0e318",
+			"guid": "95177d67-58a7-664f-e08c-4f36430cded8",
 			"name": "walkcrossRifleAim_fwd_rgt_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/rifleAnims/walkcrossRifleAim_fwd_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/walkcrossRifleAim_fwd_rgt_3p.caf.cryasset",
@@ -5115,9 +5115,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "4ea170b2-4eb3-137b-6d35-331e6c2e2447",
+			"guid": "6350524f-424c-eed2-5907-49af056e4445",
 			"name": "walkstrafeRifleAim_lft_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/rifleAnims/walkstrafeRifleAim_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/walkstrafeRifleAim_lft_3p.caf.cryasset",
@@ -5126,9 +5126,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "6eba6242-4471-b6d3-3408-c075721daf62",
+			"guid": "a0f37153-09c5-6cf0-ef79-18501e85efbb",
 			"name": "walkstrafeRifleAim_rgt_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/rifleAnims/walkstrafeRifleAim_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/rifleAnims/walkstrafeRifleAim_rgt_3p.caf.cryasset",
@@ -5137,9 +5137,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "a3cdfce3-5310-44e8-fb24-af1b547f35c6",
+			"guid": "3ca77bf4-ff1d-b0a0-1526-e3a6db7447b9",
 			"name": "run_fwd_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/run_fwd_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/run_fwd_3p.caf.cryasset",
@@ -5148,9 +5148,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "b70b4f53-d4c5-71bd-4e90-b2639b50d436",
+			"guid": "8628c844-7f76-3f11-3d65-f202573e3df4",
 			"name": "stepRotate_lft_135_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_lft_135_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_lft_135_3p.caf.cryasset",
@@ -5159,9 +5159,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "d5861a50-6837-d6bc-7dac-4037d73a76f0",
+			"guid": "4a329ec1-54ac-6594-a2d6-5e2fcb78bce3",
 			"name": "stepRotate_lft_180_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_lft_180_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_lft_180_3p.caf.cryasset",
@@ -5170,9 +5170,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "f70f5b8d-b74e-00e3-0e36-41de90fea140",
+			"guid": "b147ff11-94a1-540a-3497-8f177012b47b",
 			"name": "stepRotate_lft_45_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_lft_45_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_lft_45_3p.caf.cryasset",
@@ -5181,9 +5181,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "01d73fc9-1e25-9fce-f861-67e2ecbd2499",
+			"guid": "02f88af8-1158-e7eb-4ed7-e400121ea341",
 			"name": "stepRotate_lft_90_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_lft_90_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_lft_90_3p.caf.cryasset",
@@ -5192,9 +5192,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "ae2b5bf4-4dd1-cd61-4c7f-7222d24a55b0",
+			"guid": "e84c909d-e677-c436-21b1-265dfb6bf4aa",
 			"name": "stepRotate_rgt_135_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_rgt_135_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_rgt_135_3p.caf.cryasset",
@@ -5203,9 +5203,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "2181b4f9-a289-5fae-b144-5168a1dbc3fe",
+			"guid": "51bae4f5-efba-854a-d493-5bd5a0724c5d",
 			"name": "stepRotate_rgt_180_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_rgt_180_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_rgt_180_3p.caf.cryasset",
@@ -5214,9 +5214,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "482e5706-6aca-1f71-e95a-ff129332289e",
+			"guid": "897b9f61-9a99-c326-3f8a-545b8b697c06",
 			"name": "stepRotate_rgt_45_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_rgt_45_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_rgt_45_3p.caf.cryasset",
@@ -5225,9 +5225,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "e91cab9a-b319-48bf-cd6d-cbf090548fc6",
+			"guid": "f692d7d6-f50b-9074-3960-b24003af7eda",
 			"name": "stepRotate_rgt_90_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/stepRotate/stepRotate_rgt_90_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/stepRotate/stepRotate_rgt_90_3p.caf.cryasset",
@@ -5236,9 +5236,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "8c21a1e3-6660-c030-4553-7d5ddd745ea1",
+			"guid": "6a5081fd-379d-ef31-62e6-83b814b81e51",
 			"name": "jogcross_bck_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/jogcross_bck_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/jogcross_bck_lft_3p.caf.cryasset",
@@ -5247,9 +5247,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "52167745-6dcc-9bee-81c3-d338741425ac",
+			"guid": "db0d89ae-71b4-6d2a-87b0-ffbcd9e3bd97",
 			"name": "jogcross_bck_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/jogcross_bck_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/jogcross_bck_rgt_3p.caf.cryasset",
@@ -5258,9 +5258,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "5f162bef-3e8d-6d05-1493-e097d0423cd4",
+			"guid": "87dba157-3b2b-7409-51ba-093d3cb9faf2",
 			"name": "jogcross_fwd_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/jogcross_fwd_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/jogcross_fwd_lft_3p.caf.cryasset",
@@ -5269,9 +5269,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "f2931dd9-3d8f-b918-ad76-1a93dbbf5d5e",
+			"guid": "fe4e175d-5e8e-df96-0088-95e09788e567",
 			"name": "jogcross_fwd_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/jogcross_fwd_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/jogcross_fwd_rgt_3p.caf.cryasset",
@@ -5280,9 +5280,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "d7c7655e-0cff-c1c2-226c-c7abac0b9946",
+			"guid": "ecbf8160-af06-db59-a50c-32a9f80a3a40",
 			"name": "jogstrafe_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/jogstrafe_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/jogstrafe_lft_3p.caf.cryasset",
@@ -5291,9 +5291,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "94a35dd0-675e-bdac-f3e8-fcc944b87a51",
+			"guid": "7a11d8be-ad2a-10af-8854-03de6b068637",
 			"name": "jogstrafe_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/jogstrafe_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/jogstrafe_rgt_3p.caf.cryasset",
@@ -5302,9 +5302,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "0dd25441-bb72-477f-583b-66bf65ac8031",
+			"guid": "e52657ca-ed89-1a4e-0909-aef07bd7529b",
 			"name": "runcross_fwd_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/runcross_fwd_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/runcross_fwd_lft_3p.caf.cryasset",
@@ -5313,9 +5313,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "b896262b-a6f3-4f01-6963-ed4527255a49",
+			"guid": "82283693-d5a7-73b9-137e-0d2faa2646e9",
 			"name": "runcross_fwd_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/runcross_fwd_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/runcross_fwd_rgt_3p.caf.cryasset",
@@ -5324,9 +5324,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "28df1731-dde7-8f5f-a469-d9ff32a447e6",
+			"guid": "638ccaf0-4f0c-158c-23c4-3dd18051fefa",
 			"name": "runstrafe_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/runstrafe_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/runstrafe_lft_3p.caf.cryasset",
@@ -5335,9 +5335,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "793868b3-d812-5846-868a-090be2d927e1",
+			"guid": "817d2acf-bf29-949f-8941-ca100cbac0ef",
 			"name": "runstrafe_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/runstrafe_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/runstrafe_rgt_3p.caf.cryasset",
@@ -5346,9 +5346,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "b75c6de1-f6b9-6fa7-f81a-8d28a0a6a40a",
+			"guid": "718836ab-c31d-8edb-0c7d-5a4010be90fe",
 			"name": "walkcross_bck_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/walkcross_bck_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/walkcross_bck_lft_3p.caf.cryasset",
@@ -5357,9 +5357,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "ee174c03-c21d-414f-2fa3-2e6ab7d550d7",
+			"guid": "09fd85d8-d823-08d0-6e10-055f30b7a346",
 			"name": "walkcross_bck_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/walkcross_bck_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/walkcross_bck_rgt_3p.caf.cryasset",
@@ -5368,9 +5368,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "74df591e-f47c-51be-1f3c-2131e18bc49c",
+			"guid": "29c0c6e0-7c5e-9166-1725-665b01d1762e",
 			"name": "walkcross_fwd_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/walkcross_fwd_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/walkcross_fwd_lft_3p.caf.cryasset",
@@ -5379,9 +5379,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "a67d4268-a9dc-97de-8a2d-c4f7b124b01e",
+			"guid": "28743d91-da91-57dc-0a8a-aa57844aae8b",
 			"name": "walkcross_fwd_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/walkcross_fwd_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/walkcross_fwd_rgt_3p.caf.cryasset",
@@ -5390,9 +5390,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "569e2d44-9e00-f8d0-c07d-ea7b699aea51",
+			"guid": "db88f648-9485-ac68-baba-72fd602e6cb0",
 			"name": "walkstrafe_lft_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/walkstrafe_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/walkstrafe_lft_3p.caf.cryasset",
@@ -5401,9 +5401,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "eb3de174-d26d-b663-bf19-99a700c93480",
+			"guid": "51eae0c3-d9cd-a4bc-eaa7-3d7affb3c9a9",
 			"name": "walkstrafe_rgt_3p",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/strafe/walkstrafe_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/strafe/walkstrafe_rgt_3p.caf.cryasset",
@@ -5412,9 +5412,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "ada38e8e-9d65-b2c4-6128-419127c5127f",
+			"guid": "94f123b7-9105-bc2f-88cb-2aa21384ad6b",
 			"name": "jogturn_lft_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/turns/jogturn_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/turns/jogturn_lft_3p.caf.cryasset",
@@ -5423,9 +5423,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "d5efe9d3-6db4-8dea-946d-91e1afb12dc0",
+			"guid": "8de82c93-46e4-072f-054c-a7a759c58c2e",
 			"name": "jogturn_rgt_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/turns/jogturn_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/turns/jogturn_rgt_3p.caf.cryasset",
@@ -5434,9 +5434,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "4beb11af-18f6-af99-d537-b28f5bbfb6a1",
+			"guid": "d08281cc-e135-113b-814a-55663371a0a1",
 			"name": "runturn_lft_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/turns/runturn_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/turns/runturn_lft_3p.caf.cryasset",
@@ -5445,9 +5445,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "a35c1f91-ca59-5342-eeb2-2851728129ea",
+			"guid": "2908ba62-a68e-c367-8e79-17436a9ab65f",
 			"name": "runturn_rgt_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/turns/runturn_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/turns/runturn_rgt_3p.caf.cryasset",
@@ -5456,9 +5456,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "a27aa9aa-a4e3-3e18-03ca-bcda446e7c5e",
+			"guid": "feebe938-4e71-c167-fede-cb85689741ca",
 			"name": "walkturn_lft_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/turns/walkturn_lft_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/turns/walkturn_lft_3p.caf.cryasset",
@@ -5467,9 +5467,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "3bb949ee-43f2-e277-a3b7-f142861ec651",
+			"guid": "ac78ffc3-25da-f29e-d0c1-2a1f6ce6c807",
 			"name": "walkturn_rgt_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Animations/motusAnims/turns/walkturn_rgt_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/turns/walkturn_rgt_3p.caf.cryasset",
@@ -5478,9 +5478,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "ba50533a-9f5d-f46f-00fd-65f68e9319f1",
+			"guid": "f76a6ea9-5f19-2c73-16c4-dec4a5ca2616",
 			"name": "walk_bck_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/walk_bck_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/walk_bck_3p.caf.cryasset",
@@ -5489,9 +5489,9 @@
 		},
 		{
 			"type": "Animation",
-			"guid": "a41303bf-bc0f-6509-b7c3-a8f3744539d9",
+			"guid": "c0d928d6-1bfc-df37-706d-64f6c91eafda",
 			"name": "walk_fwd_3p",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/motusAnims/walk_fwd_3p.caf" ],
 			"source": "",
 			"metadata": "Animations/motusAnims/walk_fwd_3p.caf.cryasset",
@@ -5500,9 +5500,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "19efd6af-db66-70d0-b760-50ed12a4f922",
+			"guid": "eb2e32d1-d4f6-54de-9d16-99f98d26449c",
 			"name": "skeletonlist",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Animations/skeletonlist.xml" ],
 			"source": "",
 			"metadata": "Animations/skeletonlist.xml.cryasset",
@@ -5510,10 +5510,32 @@
 			"dependencies": [ ]
 		},
 		{
+			"type": "cryasset",
+			"guid": "527cddda-3374-b090-1a69-1846a4177ab5",
+			"name": "Idle (unresolved type: i_caf)",
+			"timestamp": 1545335308,
+			"files": [ "Animations/testPlayer/Idle.i_caf" ],
+			"source": "Animations/testPlayer/Idle.dae.zip",
+			"metadata": "Animations/testPlayer/Idle.i_caf.cryasset",
+			"details": [ ],
+			"dependencies": [ ]
+		},
+		{
+			"type": "cryasset",
+			"guid": "26dcbccc-151b-7a49-3f7b-bb751b6f68af",
+			"name": "Walk (unresolved type: i_caf)",
+			"timestamp": 1545336522,
+			"files": [ "Animations/testPlayer/Walk.i_caf" ],
+			"source": "Animations/testPlayer/Walk.dae.zip",
+			"metadata": "Animations/testPlayer/Walk.i_caf.cryasset",
+			"details": [ ],
+			"dependencies": [ ]
+		},
+		{
 			"type": "Xml",
 			"guid": "73f227bd-3040-2cfe-8a59-1ad3e8988d43",
 			"name": "default_controls",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Audio/sdlmixer/ace/default_controls.xml" ],
 			"source": "",
 			"metadata": "Audio/sdlmixer/ace/default_controls.xml.cryasset",
@@ -5524,7 +5546,7 @@
 			"type": "Xml",
 			"guid": "182f7d9c-6292-4b59-c084-7b6850756de9",
 			"name": "my_triggers",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Audio/sdlmixer/ace/my_triggers.xml" ],
 			"source": "",
 			"metadata": "Audio/sdlmixer/ace/my_triggers.xml.cryasset",
@@ -5532,21 +5554,10 @@
 			"dependencies": [ ]
 		},
 		{
-			"type": "SchematycEntity",
-			"guid": "5b9dcc74-0552-d286-4046-8d0c3d71fd92",
-			"name": "bandage",
-			"timestamp": 1545247558,
-			"files": [ "Items/bandage.schematyc_ent" ],
-			"source": "",
-			"metadata": "Items/bandage.schematyc_ent.cryasset",
-			"details": [ ],
-			"dependencies": [ ]
-		},
-		{
 			"type": "Level",
-			"guid": "984fcd77-e594-2b34-fbf5-414a47e0d684",
+			"guid": "90f6f9d4-0804-283c-02dc-2d438ba572bd",
 			"name": "example",
-			"timestamp": 1545250840,
+			"timestamp": 1545343467,
 			"files": [ "Levels/example/example.level" ],
 			"source": "",
 			"metadata": "Levels/example.level.cryasset",
@@ -5644,50 +5655,247 @@
 					"usageCount": 0
 				},
 				{ "path": "animations/mannequin/adb/playertags.xml", "usageCount": 0 },
-				{ "path": "animations/mannequin/preview/player.xml", "usageCount": 0 },
+				{
+					"path": "animations/motusanims/ide2move/idle_to_jog_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/ide2move/idle_to_run_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/ide2move/idle_to_walk_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/ide2move/jog_to_idle_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/ide2move/run_to_idle_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/ide2move/walk_to_idle_3p.caf",
+					"usageCount": 0
+				},
+				{ "path": "animations/motusanims/idle_3p.caf", "usageCount": 0 },
+				{ "path": "animations/motusanims/jog_bck_3p.caf", "usageCount": 0 },
+				{ "path": "animations/motusanims/jog_fwd_3p.caf", "usageCount": 0 },
+				{
+					"path": "animations/motusanims/rifleanims/rifleaim_idle_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/riflewalkaim_bwd_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/riflewalkaim_fwd_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/steprifleaimrotate_lft_90_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/steprifleaimrotate_rgt_90_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/walkcrossrifleaim_bck_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/walkcrossrifleaim_bck_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/walkcrossrifleaim_fwd_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/walkcrossrifleaim_fwd_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/walkstraferifleaim_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/rifleanims/walkstraferifleaim_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{ "path": "animations/motusanims/run_fwd_3p.caf", "usageCount": 0 },
+				{
+					"path": "animations/motusanims/steprotate/steprotate_lft_135_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_lft_180_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_lft_45_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_lft_90_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_rgt_135_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_rgt_180_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_rgt_45_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/steprotate/steprotate_rgt_90_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/jogcross_bck_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/jogcross_bck_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/jogcross_fwd_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/jogcross_fwd_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/jogstrafe_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/jogstrafe_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/runcross_fwd_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/runcross_fwd_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/runstrafe_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/runstrafe_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/walkcross_bck_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/walkcross_bck_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/walkcross_fwd_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/walkcross_fwd_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/walkstrafe_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/strafe/walkstrafe_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/turns/jogturn_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/turns/jogturn_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/turns/runturn_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/turns/runturn_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/turns/walkturn_lft_3p.caf",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/motusanims/turns/walkturn_rgt_3p.caf",
+					"usageCount": 0
+				},
+				{ "path": "animations/motusanims/walk_bck_3p.caf", "usageCount": 0 },
+				{ "path": "animations/motusanims/walk_fwd_3p.caf", "usageCount": 0 },
 				{ "path": "engineassets/materials/sky/sky.mtl", "usageCount": 0 },
 				{
 					"path": "engineassets/materials/water/ocean_default.mtl",
 					"usageCount": 0
 				},
+				{ "path": "engineassets/texturemsg/defaultnouvs.dds", "usageCount": 0 },
 				{
 					"path": "engineassets/textures/skys/night/half_moon.dds",
 					"usageCount": 0
 				},
 				{ "path": "libs/environmentpresets/example.xml", "usageCount": 0 },
 				{
-					"path": "objects/characters/testcharacter/mixamo com.caf",
+					"path": "objects/characters/samplecharacter/mcg_ddna.dds",
 					"usageCount": 0
 				},
 				{
-					"path": "objects/characters/testcharacter/testcharacter.cdf",
+					"path": "objects/characters/samplecharacter/mcg_diff.dds",
 					"usageCount": 0
 				},
 				{
-					"path": "objects/characters/testcharacter/testcharacter.chr",
+					"path": "objects/characters/samplecharacter/mcg_spec.dds",
 					"usageCount": 0
 				},
 				{
-					"path": "objects/characters/testcharacter/testcharacter.fbm/remy_body_diffuse.dds",
+					"path": "objects/characters/samplecharacter/motusbody.skin",
 					"usageCount": 0
 				},
 				{
-					"path": "objects/characters/testcharacter/testcharacter.fbm/remy_body_normal.dds",
+					"path": "objects/characters/samplecharacter/motusbodymat.mtl",
 					"usageCount": 0
 				},
 				{
-					"path": "objects/characters/testcharacter/testcharacter.fbm/remy_body_specular.dds",
+					"path": "objects/characters/samplecharacter/skelproxy.chr",
 					"usageCount": 0
 				},
 				{
-					"path": "objects/characters/testcharacter/testcharacter.skin",
+					"path": "objects/characters/samplecharacter/thirdperson.cdf",
 					"usageCount": 0
 				},
 				{
 					"path": "objects/weapons/sampleweapon/defaultweapon.cgf",
 					"usageCount": 0
 				},
-				{ "path": "scripts/ai/factions.xml", "usageCount": 0 },
+				{
+					"path": "objects/weapons/sampleweapon/defaultweapon.mtl",
+					"usageCount": 0
+				},
 				{
 					"path": "textures/cubemaps/example/environmentprobe1_cm.dds",
 					"usageCount": 0
@@ -5700,9 +5908,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "d6cd39f2-ecfb-3bdf-24fc-3c1721b9c3e4",
+			"guid": "ae4b13f3-4538-6d5a-90fd-5c018c529664",
 			"name": "filelist",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Levels/example/filelist.xml" ],
 			"source": "",
 			"metadata": "Levels/example/filelist.xml.cryasset",
@@ -5711,9 +5919,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "46144c17-bab7-882a-d6ea-1e9436570ebb",
+			"guid": "5d430851-0b64-e3d9-eced-d92b883a03a9",
 			"name": "Environment",
-			"timestamp": 1545157063,
+			"timestamp": 1545343468,
 			"files": [ "Levels/example/leveldata/Environment.xml" ],
 			"source": "",
 			"metadata": "Levels/example/leveldata/Environment.xml.cryasset",
@@ -5722,9 +5930,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "f8734744-37b7-c26b-104c-64c162740c46",
+			"guid": "acf1acd1-3a16-3c99-fb3f-965fe6b9cc23",
 			"name": "defaultprofile",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Libs/config/defaultprofile.xml" ],
 			"source": "",
 			"metadata": "Libs/config/defaultprofile.xml.cryasset",
@@ -5733,9 +5941,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "a658c7d1-bcdc-fd4d-b19d-b548c4bdd2a5",
+			"guid": "eb5d8f63-9f5d-dc89-24da-8188058d7f08",
 			"name": "actionmaps",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Libs/config/Profiles/default/actionmaps.xml" ],
 			"source": "",
 			"metadata": "Libs/config/Profiles/default/actionmaps.xml.cryasset",
@@ -5744,9 +5952,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "8cc48743-4c33-c7c9-1d86-f454b59ed4c5",
+			"guid": "0293d57c-d88e-49d7-77d4-c8a017b5f0d0",
 			"name": "attributes",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Libs/config/Profiles/default/attributes.xml" ],
 			"source": "",
 			"metadata": "Libs/config/Profiles/default/attributes.xml.cryasset",
@@ -5755,9 +5963,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "76481df4-597f-900f-c5d1-01657a26a0e0",
+			"guid": "452472c7-8a8d-b73e-58e9-2508ea705deb",
 			"name": "levelrotation",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Libs/config/Profiles/default/levelrotation/levelrotation.xml" ],
 			"source": "",
 			"metadata": "Libs/config/Profiles/default/levelrotation/levelrotation.xml.cryasset",
@@ -5766,9 +5974,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "fa9204ec-ad8e-207b-7262-3d2ce86004f0",
+			"guid": "70e07507-0b78-be61-0845-499d1a303962",
 			"name": "profile",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Libs/config/Profiles/default/profile.xml" ],
 			"source": "",
 			"metadata": "Libs/config/Profiles/default/profile.xml.cryasset",
@@ -5777,9 +5985,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "57e15c93-a183-6825-67be-a01bc9bb02e6",
+			"guid": "07f6c12f-c5ae-1009-eb98-ed0c3040f5e2",
 			"name": "example",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Libs/environmentpresets/example.xml" ],
 			"source": "",
 			"metadata": "Libs/environmentpresets/example.xml.cryasset",
@@ -5788,9 +5996,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "c1e3e0aa-6420-f5ff-1f64-46598da7a39e",
+			"guid": "4a809d3a-79a3-4774-f8a5-a8e74bcbac9f",
 			"name": "FlownodeBlacklist",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Libs/flownodes/FlownodeBlacklist.xml" ],
 			"source": "",
 			"metadata": "Libs/flownodes/FlownodeBlacklist.xml.cryasset",
@@ -5799,9 +6007,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "4a26220c-125b-02a6-dff8-34ab612f2974",
+			"guid": "a245fe9d-67d0-3743-172f-f57bcbd44b03",
 			"name": "Substitutions",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Libs/flownodes/Substitutions.xml" ],
 			"source": "",
 			"metadata": "Libs/flownodes/Substitutions.xml.cryasset",
@@ -5810,9 +6018,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "66802a4d-9e3a-adc6-469c-1a7cece3c342",
+			"guid": "eb2e1ed6-f470-be31-796f-8d0407eee541",
 			"name": "collision",
-			"timestamp": 1545157064,
+			"timestamp": 1545343468,
 			"files": [ "Libs/MaterialEffects/FXLibs/collision.xml" ],
 			"source": "",
 			"metadata": "Libs/MaterialEffects/FXLibs/collision.xml.cryasset",
@@ -5821,9 +6029,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "543dd2a4-f4d0-b573-8b6e-e668fb4fbba5",
+			"guid": "ace02a3a-2b07-5868-7105-398e652c42c2",
 			"name": "MaterialEffects",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Libs/MaterialEffects/MaterialEffects.xml" ],
 			"source": "",
 			"metadata": "Libs/MaterialEffects/MaterialEffects.xml.cryasset",
@@ -5832,9 +6040,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "b2405fe1-eb3b-bb68-8ba2-83986ce5a43a",
+			"guid": "4d907864-68d8-7186-9b93-a6ef1ee71ba9",
 			"name": "SurfaceTypes",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Libs/MaterialEffects/SurfaceTypes.xml" ],
 			"source": "",
 			"metadata": "Libs/MaterialEffects/SurfaceTypes.xml.cryasset",
@@ -5845,7 +6053,7 @@
 			"type": "Material",
 			"guid": "76452ec6-d264-9a3a-7281-6b9f58516e00",
 			"name": "bullet",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Materials/bullet.mtl" ],
 			"source": "",
 			"metadata": "Materials/bullet.mtl.cryasset",
@@ -5858,21 +6066,10 @@
 			]
 		},
 		{
-			"type": "Skeleton",
-			"guid": "d442bcfe-5ab8-cdf6-f001-f2d13ca9950d",
-			"name": "PlayerModel",
-			"timestamp": 1545257285,
-			"files": [ "Objects/Characters/PlayerModel/PlayerModel.chr" ],
-			"source": "Objects/Characters/PlayerModel/PlayerModel.dae.zip",
-			"metadata": "Objects/Characters/PlayerModel/PlayerModel.chr.cryasset",
-			"details": [ ],
-			"dependencies": [ ]
-		},
-		{
 			"type": "Character",
-			"guid": "ee332161-d23a-4b8a-4378-55991aa6c1e0",
+			"guid": "62085da2-2031-3490-0040-54565bb02d94",
 			"name": "firstperson",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Characters/SampleCharacter/firstperson.cdf" ],
 			"source": "",
 			"metadata": "Objects/Characters/SampleCharacter/firstperson.cdf.cryasset",
@@ -5906,9 +6103,9 @@
 		},
 		{
 			"type": "Texture",
-			"guid": "530db62f-aa70-07a2-a6aa-9e841a3a29ff",
+			"guid": "ef0e1036-71b5-6e67-703f-24a320933d0d",
 			"name": "mcg_ddna",
-			"timestamp": 1545157095,
+			"timestamp": 1545343650,
 			"files": [ "Objects/Characters/SampleCharacter/mcg_ddna.dds" ],
 			"source": "Objects/Characters/SampleCharacter/mcg_ddna.tif",
 			"metadata": "Objects/Characters/SampleCharacter/mcg_ddna.dds.cryasset",
@@ -5921,9 +6118,9 @@
 		},
 		{
 			"type": "Texture",
-			"guid": "653b2538-2b21-1764-a8ba-5bd086e64796",
+			"guid": "b1f708a9-ae35-7cf8-ec9e-04ea33d02013",
 			"name": "mcg_diff",
-			"timestamp": 1545157101,
+			"timestamp": 1545343645,
 			"files": [ "Objects/Characters/SampleCharacter/mcg_diff.dds" ],
 			"source": "Objects/Characters/SampleCharacter/mcg_diff.tif",
 			"metadata": "Objects/Characters/SampleCharacter/mcg_diff.dds.cryasset",
@@ -5936,9 +6133,9 @@
 		},
 		{
 			"type": "Texture",
-			"guid": "b1df0b22-c902-f160-d6e0-1c7a24c016f9",
+			"guid": "f6d2a559-022b-e46d-7bc3-69d672ad21fa",
 			"name": "mcg_spec",
-			"timestamp": 1545157107,
+			"timestamp": 1545343656,
 			"files": [ "Objects/Characters/SampleCharacter/mcg_spec.dds" ],
 			"source": "Objects/Characters/SampleCharacter/mcg_spec.tif",
 			"metadata": "Objects/Characters/SampleCharacter/mcg_spec.dds.cryasset",
@@ -5951,9 +6148,9 @@
 		},
 		{
 			"type": "SkinnedMesh",
-			"guid": "18627522-21b9-f439-2236-1b6ae86af30e",
+			"guid": "dd30777d-1a0f-85fa-5e32-7d23f9723068",
 			"name": "motusBody",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Characters/SampleCharacter/motusBody.skin" ],
 			"source": "",
 			"metadata": "Objects/Characters/SampleCharacter/motusBody.skin.cryasset",
@@ -5967,15 +6164,15 @@
 			"dependencies": [
 				{
 					"path": "Objects/Characters/SampleCharacter/motusBodyMAT.mtl",
-					"usageCount": 1
+					"usageCount": 0
 				}
 			]
 		},
 		{
 			"type": "SkinnedMesh",
-			"guid": "1cbe9ca9-5df3-e9d4-b758-25cb5503535c",
+			"guid": "5f5a38cb-8026-a80d-ad14-9f0bbd0dda3c",
 			"name": "motusBodyHeadless",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Characters/SampleCharacter/motusBodyHeadless.skin" ],
 			"source": "",
 			"metadata": "Objects/Characters/SampleCharacter/motusBodyHeadless.skin.cryasset",
@@ -5989,15 +6186,15 @@
 			"dependencies": [
 				{
 					"path": "Objects/Characters/SampleCharacter/motusBodyMAT.mtl",
-					"usageCount": 1
+					"usageCount": 0
 				}
 			]
 		},
 		{
 			"type": "Material",
-			"guid": "e5343df0-8741-46a2-afc8-3ab5377f4e2e",
+			"guid": "ce345eaf-3065-9da5-8e7e-cf414c119cf8",
 			"name": "motusBodyMAT",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Characters/SampleCharacter/motusBodyMAT.mtl" ],
 			"source": "",
 			"metadata": "Objects/Characters/SampleCharacter/motusBodyMAT.mtl.cryasset",
@@ -6008,23 +6205,23 @@
 			"dependencies": [
 				{
 					"path": "Objects/Characters/SampleCharacter/mcg_diff.dds",
-					"usageCount": 1
+					"usageCount": 0
 				},
 				{
 					"path": "Objects/Characters/SampleCharacter/mcg_ddna.dds",
-					"usageCount": 1
+					"usageCount": 0
 				},
 				{
 					"path": "Objects/Characters/SampleCharacter/mcg_spec.dds",
-					"usageCount": 1
+					"usageCount": 0
 				}
 			]
 		},
 		{
 			"type": "Skeleton",
-			"guid": "6a473dd6-3806-bd36-060d-2337e64d5055",
+			"guid": "5ab92ed7-c502-473a-f64d-20189e4a0387",
 			"name": "skelProxy",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Characters/SampleCharacter/skelProxy.chr" ],
 			"source": "",
 			"metadata": "Objects/Characters/SampleCharacter/skelProxy.chr.cryasset",
@@ -6033,9 +6230,9 @@
 		},
 		{
 			"type": "Character",
-			"guid": "7a865ba9-7f77-0b32-373d-2a5648f8c680",
+			"guid": "1eeb4b33-1400-3958-dae3-4f251bb7b79e",
 			"name": "thirdperson",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Characters/SampleCharacter/thirdperson.cdf" ],
 			"source": "",
 			"metadata": "Objects/Characters/SampleCharacter/thirdperson.cdf.cryasset",
@@ -6069,87 +6266,283 @@
 		},
 		{
 			"type": "Character",
-			"guid": "37ed14c2-961a-5268-70a7-55162c8d2048",
-			"name": "testcharacter",
-			"timestamp": 1545255738,
-			"files": [ "Objects/Characters/TestCharacter/testcharacter.cdf" ],
+			"guid": "d5327f47-aac1-0b67-8b83-f9098773e4d2",
+			"name": "testplayer",
+			"timestamp": 1545336628,
+			"files": [ "Objects/Characters/TestPlayer/testplayer.cdf" ],
 			"source": "",
-			"metadata": "Objects/Characters/TestCharacter/testcharacter.cdf.cryasset",
+			"metadata": "Objects/Characters/TestPlayer/testplayer.cdf.cryasset",
 			"details": [ ],
 			"dependencies": [
 				{
-					"path": "Objects/Characters/TestCharacter/TestCharacter.chr",
+					"path": "Objects/Characters/TestPlayer/TestPlayer.chr",
 					"usageCount": 0
 				},
 				{
-					"path": "Objects/Characters/TestCharacter/TestCharacter.mtl",
+					"path": "Objects/Characters/TestPlayer/TestPlayer.mtl",
 					"usageCount": 0
 				}
 			]
 		},
 		{
 			"type": "Skeleton",
-			"guid": "1c8bd039-ccf8-32c4-949b-c87cbf8753a7",
-			"name": "TestCharacter",
-			"timestamp": 1545255116,
-			"files": [ "Objects/Characters/TestCharacter/TestCharacter.chr" ],
-			"source": "Objects/Characters/TestCharacter/TestCharacter.dae.zip",
-			"metadata": "Objects/Characters/TestCharacter/TestCharacter.chr.cryasset",
+			"guid": "42689b96-f65b-4c61-a4f8-a1b7f0d39e69",
+			"name": "TestPlayer",
+			"timestamp": 1545334856,
+			"files": [ "Objects/Characters/TestPlayer/TestPlayer.chr" ],
+			"source": "Objects/Characters/TestPlayer/TestPlayer.dae.zip",
+			"metadata": "Objects/Characters/TestPlayer/TestPlayer.chr.cryasset",
 			"details": [ ],
 			"dependencies": [ ]
 		},
 		{
 			"type": "Material",
-			"guid": "46319d9d-67ef-7e1d-8fcf-673cca61f194",
-			"name": "TestCharacter",
-			"timestamp": 1545255499,
-			"files": [ "Objects/Characters/TestCharacter/TestCharacter.mtl" ],
+			"guid": "b9651db0-4374-926f-1075-0648f224ff17",
+			"name": "TestPlayer",
+			"timestamp": 1545336714,
+			"files": [ "Objects/Characters/TestPlayer/TestPlayer.mtl" ],
 			"source": "",
-			"metadata": "Objects/Characters/TestCharacter/TestCharacter.mtl.cryasset",
+			"metadata": "Objects/Characters/TestPlayer/TestPlayer.mtl.cryasset",
 			"details": [
 				{ "key": "subMaterialCount", "value": "4" },
-				{ "key": "textureCount", "value": "8" }
+				{ "key": "textureCount", "value": "12" }
 			],
 			"dependencies": [
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Shoes_Diffuse.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_diff.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Shoes_Specular.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_ddna.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Top_Diffuse.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_spec.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Top_Specular.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_top_diff.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Bottom_Diffuse.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_top_ddna.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Bottom_Specular.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_top_spec.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Body_Diffuse.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_diff.dds",
 					"usageCount": 1
 				},
 				{
-					"path": "C:/Users/xXRag/OneDrive/Desktop/fbxtool-master/TestCharacter.fbm/TestModel_Body_Specular.dds",
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ddna.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ spec.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_body_diff.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_body_ddna.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Objects/Characters/TestPlayer/Textures/testplayer_body_spec.dds",
 					"usageCount": 1
 				}
 			]
 		},
 		{
+			"type": "Texture",
+			"guid": "b6e27308-32f2-3990-2296-ed730a2b6c3e",
+			"name": "testplayer_body_ddna",
+			"timestamp": 1545329256,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_body_ddna.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_body_ddna.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_body_ddna.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "1024" },
+				{ "key": "mipCount", "value": "9" },
+				{ "key": "width", "value": "1024" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "65095633-57d4-00ea-c2f8-ee4d84692df0",
+			"name": "testplayer_body_diff",
+			"timestamp": 1545329269,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_body_diff.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_body_diff.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_body_diff.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "1024" },
+				{ "key": "mipCount", "value": "9" },
+				{ "key": "width", "value": "1024" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "d5cc4fbc-9ae4-8b49-c55a-ee6abaf716db",
+			"name": "testplayer_body_spec",
+			"timestamp": 1545329272,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_body_spec.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_body_spec.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_body_spec.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "1024" },
+				{ "key": "mipCount", "value": "9" },
+				{ "key": "width", "value": "1024" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "599eb489-2619-1c64-1e56-c90e99a92312",
+			"name": "testplayer_bottom_ spec",
+			"timestamp": 1545329273,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ spec.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ spec.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ spec.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "5ea08a34-ff92-4d86-5ab1-5f10ee05a69c",
+			"name": "testplayer_bottom_ddna",
+			"timestamp": 1545329274,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ddna.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ddna.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_ddna.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "644b427b-094c-80c8-b54a-467c3e18914a",
+			"name": "testplayer_bottom_diff",
+			"timestamp": 1545329275,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_bottom_diff.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_diff.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_bottom_diff.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "072a778a-8cfb-9f8f-65cf-58898b6de6e8",
+			"name": "testplayer_shoes_ddna",
+			"timestamp": 1545329276,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_shoes_ddna.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_ddna.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_ddna.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "674088b3-884a-f05f-6ac0-06b3f6471af6",
+			"name": "testplayer_shoes_diff",
+			"timestamp": 1545329276,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_shoes_diff.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_diff.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_diff.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "257c6e16-44da-1894-9e49-11ed5cfd267c",
+			"name": "testplayer_shoes_spec",
+			"timestamp": 1545329277,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_shoes_spec.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_spec.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_shoes_spec.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "9dca9d62-c900-695c-4e54-5b73330272bd",
+			"name": "testplayer_top_ddna",
+			"timestamp": 1545329277,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_top_ddna.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_top_ddna.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_top_ddna.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "f07641b9-1fc4-f00b-9266-d07975a32b4c",
+			"name": "testplayer_top_diff",
+			"timestamp": 1545329278,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_top_diff.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_top_diff.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_top_diff.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
+			"type": "Texture",
+			"guid": "99eceea7-a8f1-4474-9fae-fa26556c9110",
+			"name": "testplayer_top_spec",
+			"timestamp": 1545329279,
+			"files": [ "Objects/Characters/TestPlayer/Textures/testplayer_top_spec.dds" ],
+			"source": "Objects/Characters/TestPlayer/Textures/testplayer_top_spec.tif",
+			"metadata": "Objects/Characters/TestPlayer/Textures/testplayer_top_spec.dds.cryasset",
+			"details": [
+				{ "key": "height", "value": "512" },
+				{ "key": "mipCount", "value": "8" },
+				{ "key": "width", "value": "512" }
+			],
+			"dependencies": [ ]
+		},
+		{
 			"type": "Mesh",
-			"guid": "c3a21ba0-72bd-18ae-4f00-d1c7fa5bc311",
+			"guid": "3dc7e1bf-633c-a074-5b0d-e97ec02b79bd",
 			"name": "defaultweapon",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Weapons/SampleWeapon/defaultweapon.cgf" ],
 			"source": "",
 			"metadata": "Objects/Weapons/SampleWeapon/defaultweapon.cgf.cryasset",
@@ -6162,15 +6555,15 @@
 			"dependencies": [
 				{
 					"path": "Objects/Weapons/SampleWeapon/defaultWeapon.mtl",
-					"usageCount": 1
+					"usageCount": 0
 				}
 			]
 		},
 		{
 			"type": "Material",
-			"guid": "34ae9632-f5c9-3e40-d7e1-6b13c5ecd599",
+			"guid": "c46c8697-00de-a27c-73c9-5023df21dc9b",
 			"name": "defaultWeapon",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Weapons/SampleWeapon/defaultWeapon.mtl" ],
 			"source": "",
 			"metadata": "Objects/Weapons/SampleWeapon/defaultWeapon.mtl.cryasset",
@@ -6178,13 +6571,15 @@
 				{ "key": "subMaterialCount", "value": "1" },
 				{ "key": "textureCount", "value": "1" }
 			],
-			"dependencies": [ { "path": "textures/defaults/grey.dds", "usageCount": 1 } ]
+			"dependencies": [
+				{ "path": "engineassets/textures/white.dds", "usageCount": 0 }
+			]
 		},
 		{
 			"type": "Mesh",
-			"guid": "485289d2-d680-6f33-e986-ea3cd57f9aff",
+			"guid": "852bc343-8f99-0e0b-92e9-4b8bda51e8f8",
 			"name": "motusweapon",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Weapons/SampleWeapon/motusweapon.cgf" ],
 			"source": "",
 			"metadata": "Objects/Weapons/SampleWeapon/motusweapon.cgf.cryasset",
@@ -6197,15 +6592,15 @@
 			"dependencies": [
 				{
 					"path": "Objects/Weapons/SampleWeapon/defaultWeaponMAT.mtl",
-					"usageCount": 1
+					"usageCount": 0
 				}
 			]
 		},
 		{
 			"type": "Material",
-			"guid": "dd8baa0e-1bc6-e55b-a593-321119300755",
+			"guid": "4d3839f0-bdc7-d221-cb4a-998f62eaa620",
 			"name": "motusWeaponMAT",
-			"timestamp": 1545157064,
+			"timestamp": 1545343467,
 			"files": [ "Objects/Weapons/SampleWeapon/motusWeaponMAT.mtl" ],
 			"source": "",
 			"metadata": "Objects/Weapons/SampleWeapon/motusWeaponMAT.mtl.cryasset",
@@ -6213,24 +6608,13 @@
 				{ "key": "subMaterialCount", "value": "1" },
 				{ "key": "textureCount", "value": "1" }
 			],
-			"dependencies": [ { "path": "textures/defaults/grey.dds", "usageCount": 1 } ]
-		},
-		{
-			"type": "SchematycEntity",
-			"guid": "361d757a-c7bc-bacf-077f-ca08c77ed226",
-			"name": "main_player",
-			"timestamp": 1545250580,
-			"files": [ "Players/Main_Player.schematyc_ent" ],
-			"source": "",
-			"metadata": "Players/main_player.schematyc_ent.cryasset",
-			"details": [ ],
-			"dependencies": [ ]
+			"dependencies": [ { "path": "textures/defaults/grey.dds", "usageCount": 0 } ]
 		},
 		{
 			"type": "Xml",
-			"guid": "d350be21-5c55-5cc6-36b2-e62105da453c",
+			"guid": "80edea4b-97fe-b56b-27c1-f8a0672aac17",
 			"name": "Factions",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Scripts/AI/Factions.xml" ],
 			"source": "",
 			"metadata": "Scripts/AI/Factions.xml.cryasset",
@@ -6239,9 +6623,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "dc698657-ea18-b5ae-7d89-5081ea04e472",
+			"guid": "8db627c7-033d-dbba-9a5b-a6cccc485d4a",
 			"name": "GameObjectSerializationOrder",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Scripts/GameObjectSerializationOrder.xml" ],
 			"source": "",
 			"metadata": "Scripts/GameObjectSerializationOrder.xml.cryasset",
@@ -6250,9 +6634,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "27cd0871-9049-a8a6-39a7-b8f9549a8d14",
+			"guid": "49c38a34-94a6-cf45-1eda-eafc02adf5bb",
 			"name": "CompressionPolicy",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Scripts/network/CompressionPolicy.xml" ],
 			"source": "",
 			"metadata": "Scripts/network/CompressionPolicy.xml.cryasset",
@@ -6261,9 +6645,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "15d51acf-2929-336a-1328-afa7bc2a6324",
+			"guid": "fe409854-66a0-09de-9dc0-a2a13d3ad324",
 			"name": "EntityScheduler",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Scripts/network/EntityScheduler.xml" ],
 			"source": "",
 			"metadata": "Scripts/network/EntityScheduler.xml.cryasset",
@@ -6272,9 +6656,9 @@
 		},
 		{
 			"type": "Xml",
-			"guid": "a43b320a-da7a-69fe-7d65-77d88a69deb5",
+			"guid": "36e8aa18-e6d0-a9a4-4e84-4da117c31768",
 			"name": "Scheduler",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Scripts/network/Scheduler.xml" ],
 			"source": "",
 			"metadata": "Scripts/network/Scheduler.xml.cryasset",
@@ -6283,9 +6667,9 @@
 		},
 		{
 			"type": "Texture",
-			"guid": "d5a7c4e1-68e8-b1da-abd0-03de65322d27",
+			"guid": "38101b0f-04b3-58cb-c62a-ea795827a5e0",
 			"name": "environmentprobe1_cm",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Textures/cubemaps/example/environmentprobe1_cm.dds" ],
 			"source": "",
 			"metadata": "Textures/cubemaps/example/environmentprobe1_cm.dds.cryasset",
@@ -6298,9 +6682,9 @@
 		},
 		{
 			"type": "Texture",
-			"guid": "97e2b217-4c3e-a6d9-56d7-97e089a8a9ce",
+			"guid": "20d4e088-af30-df0e-0b78-1239b6ade872",
 			"name": "environmentprobe1_cm_diff",
-			"timestamp": 1545157063,
+			"timestamp": 1545343467,
 			"files": [ "Textures/cubemaps/example/environmentprobe1_cm_diff.dds" ],
 			"source": "",
 			"metadata": "Textures/cubemaps/example/environmentprobe1_cm_diff.dds.cryasset",

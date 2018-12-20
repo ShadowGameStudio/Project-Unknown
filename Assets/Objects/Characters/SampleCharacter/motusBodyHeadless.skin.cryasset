@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="SkinnedMesh" guid="1cbe9ca9-5df3-e9d4-b758-25cb5503535c">
+<AssetMetadata version="0" type="SkinnedMesh" guid="5f5a38cb-8026-a80d-ad14-9f0bbd0dda3c">
  <Files>
   <File path="motusBodyHeadless.skin"/>
  </Files>
@@ -10,6 +10,6 @@
   <Detail name="bonesCount">80</Detail>
  </Details>
  <Dependencies>
-  <Path usageCount="1">./motusBodyMAT.mtl</Path>
+  <Path>./motusBodyMAT.mtl</Path>
  </Dependencies>
 </AssetMetadata>

@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Material" guid="e5343df0-8741-46a2-afc8-3ab5377f4e2e">
+<AssetMetadata version="0" type="Material" guid="ce345eaf-3065-9da5-8e7e-cf414c119cf8">
  <Files>
   <File path="motusBodyMAT.mtl"/>
  </Files>
@@ -7,8 +7,8 @@
   <Detail name="textureCount">3</Detail>
  </Details>
  <Dependencies>
-  <Path usageCount="1">Objects/Characters/SampleCharacter/mcg_diff.dds</Path>
-  <Path usageCount="1">Objects/Characters/SampleCharacter/mcg_ddna.dds</Path>
-  <Path usageCount="1">Objects/Characters/SampleCharacter/mcg_spec.dds</Path>
+  <Path>Objects/Characters/SampleCharacter/mcg_diff.dds</Path>
+  <Path>Objects/Characters/SampleCharacter/mcg_ddna.dds</Path>
+  <Path>Objects/Characters/SampleCharacter/mcg_spec.dds</Path>
  </Dependencies>
 </AssetMetadata>

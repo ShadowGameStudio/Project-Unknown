@@ -1,0 +1,23 @@
+<AssetMetadata version="0" type="Material" guid="b9651db0-4374-926f-1075-0648f224ff17">
+ <Files>
+  <File path="TestPlayer.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">4</Detail>
+  <Detail name="textureCount">12</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_shoes_diff.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_shoes_ddna.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_shoes_spec.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_top_diff.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_top_ddna.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_top_spec.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_bottom_diff.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_bottom_ddna.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_bottom_ spec.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_body_diff.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_body_ddna.dds</Path>
+  <Path usageCount="1">Objects/Characters/TestPlayer/Textures/testplayer_body_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

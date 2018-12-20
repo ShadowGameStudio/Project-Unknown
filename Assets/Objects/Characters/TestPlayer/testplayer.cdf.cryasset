@@ -1,0 +1,10 @@
+<AssetMetadata version="0" type="Character" guid="d5327f47-aac1-0b67-8b83-f9098773e4d2">
+ <Files>
+  <File path="testplayer.cdf"/>
+ </Files>
+ <Details />
+ <Dependencies>
+  <Path>Objects/Characters/TestPlayer/TestPlayer.chr</Path>
+  <Path>Objects/Characters/TestPlayer/TestPlayer.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

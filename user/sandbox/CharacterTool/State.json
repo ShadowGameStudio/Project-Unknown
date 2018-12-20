@@ -22,11 +22,11 @@
 					"showDccToolOrigin": false
 				},
 				"showEdges": false,
-				"wireframe": true,
+				"wireframe": false,
 				"fps": true,
 				"skeleton": {
 					"jointFilter": "",
-					"showJoints": true,
+					"showJoints": false,
 					"showJointNames": false,
 					"showJointNamesFontSize": 1.0,
 					"showSkeletonBoundingBox": false
@@ -51,8 +51,8 @@
 					"showClothProxies": false
 				},
 				"physics": {
-					"showPhysicalProxies": "solid",
-					"showRagdollJointLimits": "all"
+					"showPhysicalProxies": "none",
+					"showRagdollJointLimits": "none"
 				},
 				"grid": {
 					"showGrid": true,
@@ -80,7 +80,7 @@
 					"bottomColor": { "r": 32, "g": 32, "b": 32, "a": 255 }
 				}
 			},
-			"playbackTime": 0.43691
+			"playbackTime": 0.47617
 		}
 	},
 	"dockWidgetManager": {
@@ -105,20 +105,21 @@
 						"expandedItems": [
 							"Characters",
 							"Skeletons",
+							"Animations (animations/testplayer/)",
 							"Skeletons|Objects",
 							"Characters|Objects",
 							"Characters|Objects|Characters",
-							"Characters|Objects|Characters|PlayerModel"
+							"Characters|Objects|Characters|TestPlayer"
 						],
 						"selectedItems": [
-							"Characters|Objects|Characters|PlayerModel|PlayerModel.cdf",
-							"Characters|Objects|Characters|PlayerModel",
-							"Characters|Objects|Characters|PlayerModel",
-							"Characters|Objects|Characters|PlayerModel",
-							"Characters|Objects|Characters|PlayerModel",
-							"Characters|Objects|Characters|PlayerModel"
+							"Animations (animations/testplayer/)|walk",
+							"Animations (animations/testplayer/)",
+							"Animations (animations/testplayer/)|8 KB",
+							"Animations (animations/testplayer/)|30",
+							"Animations (animations/testplayer/)",
+							"Animations (animations/testplayer/)"
 						],
-						"currentItem": "Characters|Objects|Characters|PlayerModel|PlayerModel.cdf",
+						"currentItem": "Animations (animations/testplayer/)|walk",
 						"sectionsHidden": [ 1, 2, 3, 4, 5 ],
 						"sectionsVisible": [ 0 ]
 					}
@@ -128,21 +129,19 @@
 	},
 	"displayPanel": {
 		"propertyTree": {
-			"focusedRow": [ 4, 1 ],
-			"selection": [ [ 4, 1 ] ],
-			"expanded": [
-				0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-			]
+			"focusedRow": [ ],
+			"selection": [ ],
+			"expanded": [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
 		}
 	},
-	"displayParameterSplittersWidths": [ 1350, 200 ],
-	"displayOptionsVisible": true,
+	"displayParameterSplittersWidths": [ 400, 200 ],
+	"displayOptionsVisible": false,
 	"playbackPanel": { "timeUnits": "seconds" },
 	"propertiesPanel": {
 		"propertyTree": {
-			"focusedRow": [ 1 ],
-			"selection": [ [ 1 ] ],
-			"expanded": [ 1, 1, 1, 1, 1, 1, 1 ]
+			"focusedRow": [ ],
+			"selection": [ ],
+			"expanded": [ 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1 ]
 		},
 		"outlineMode": "oneTree"
 	},
@@ -159,20 +158,15 @@
 	"animEventPresetPanel": {
 		"palette": { "addWithSingleClick": false, "hotkeys": [ ] }
 	},
-	"recentCharacters": [
-		"Objects/Characters/PlayerModel/PlayerModel.cdf",
-		"Objects/Characters/TestCharacter/TestCharacter.cdf",
-		"Objects/Characters/SampleCharacter/thirdperson.cdf",
-		"Objects/Characters/SampleCharacter/firstperson.cdf"
-	],
+	"recentCharacters": [ "Objects/Characters/TestPlayer/testplayer.cdf" ],
 	"windowGeometry": [
 		1, 217, 208, 203, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 125, 0, 0, 3, 248, 0, 0, 0, 0, 0, 0, 0, 0,
 		0, 0, 7, 125, 0, 0, 3, 248, 0, 0, 0, 0, 0, 0, 0, 0, 7, 128
 	],
 	"windowState": [
-		0, 0, 0, 255, 0, 0, 0, 0, 253, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 180, 0, 0, 3, 127, 252, 2, 0, 0, 0, 1, 251,
+		0, 0, 0, 255, 0, 0, 0, 0, 253, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 127, 252, 2, 0, 0, 0, 1, 251,
 		0, 0, 0, 30, 0, 69, 0, 120, 0, 112, 0, 108, 0, 111, 0, 114, 0, 101, 0, 114, 0, 80, 0, 97, 0, 110, 0, 101, 0, 108, 0, 45,
-		0, 48, 1, 0, 0, 0, 19, 0, 0, 3, 127, 0, 0, 0, 121, 0, 255, 255, 255, 0, 0, 0, 1, 0, 0, 0, 172, 0, 0, 3, 127, 252,
+		0, 48, 1, 0, 0, 0, 19, 0, 0, 3, 127, 0, 0, 0, 121, 0, 255, 255, 255, 0, 0, 0, 1, 0, 0, 1, 30, 0, 0, 3, 127, 252,
 		2, 0, 0, 0, 4, 251, 0, 0, 0, 32, 0, 115, 0, 99, 0, 101, 0, 110, 0, 101, 0, 95, 0, 112, 0, 97, 0, 114, 0, 97, 0, 109,
 		0, 101, 0, 116, 0, 101, 0, 114, 0, 115, 1, 0, 0, 0, 19, 0, 0, 0, 183, 0, 0, 0, 23, 0, 255, 255, 255, 251, 0, 0, 0, 20,
 		0, 112, 0, 114, 0, 111, 0, 112, 0, 101, 0, 114, 0, 116, 0, 105, 0, 101, 0, 115, 1, 0, 0, 0, 208, 0, 0, 2, 194, 0, 0, 0,
@@ -181,7 +175,7 @@
 		255, 251, 0, 0, 0, 36, 0, 97, 0, 110, 0, 105, 0, 109, 0, 95, 0, 101, 0, 118, 0, 101, 0, 110, 0, 116, 0, 95, 0, 112, 0, 114,
 		0, 101, 0, 115, 0, 101, 0, 116, 0, 115, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 85, 0, 255, 255, 255, 0, 0, 0, 3, 0,
 		0, 7, 126, 0, 0, 0, 97, 252, 1, 0, 0, 0, 1, 251, 0, 0, 0, 16, 0, 112, 0, 108, 0, 97, 0, 121, 0, 98, 0, 97, 0, 99,
-		0, 107, 1, 0, 0, 0, 0, 0, 0, 7, 126, 0, 0, 1, 176, 0, 255, 255, 255, 0, 0, 6, 18, 0, 0, 3, 127, 0, 0, 0, 4, 0,
+		0, 107, 1, 0, 0, 0, 0, 0, 0, 7, 126, 0, 0, 1, 176, 0, 255, 255, 255, 0, 0, 5, 84, 0, 0, 3, 127, 0, 0, 0, 4, 0,
 		0, 0, 4, 0, 0, 0, 8, 0, 0, 0, 8, 252, 0, 0, 0, 0
 	]
 }

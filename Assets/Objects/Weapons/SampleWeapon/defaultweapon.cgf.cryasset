@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Mesh" guid="c3a21ba0-72bd-18ae-4f00-d1c7fa5bc311">
+<AssetMetadata version="0" type="Mesh" guid="3dc7e1bf-633c-a074-5b0d-e97ec02b79bd">
  <Files>
   <File path="defaultweapon.cgf"/>
  </Files>
@@ -9,6 +9,6 @@
   <Detail name="16BitPrecision">false</Detail>
  </Details>
  <Dependencies>
-  <Path usageCount="1">./defaultWeapon.mtl</Path>
+  <Path>./defaultWeapon.mtl</Path>
  </Dependencies>
 </AssetMetadata>

@@ -5,79 +5,101 @@
 #include "SpawnPoint.h"
 
 #include <CryRenderer/IRenderAuxGeom.h>
-#include "CrySchematyc\Env\Elements\EnvComponent.h"
-
-static void RegisterPlayer(Schematyc::IEnvRegistrar& registrar)
-{
-	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
-	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CPlayerComponent));
-		// Functions
-		{
-		}
-	}
-}
-
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterPlayer)
 
 void CPlayerComponent::Initialize()
 {
-	//Get or create the camera and other components
-	m_pInputComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CInputComponent>();
+	// Create the camera component, will automatically update the viewport every frame
 	m_pCameraComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CCameraComponent>();
-	m_pInventoryComponent = m_pEntity->GetOrCreateComponentClass<CInventoryComponent>();
+	
+	// The character controller is responsible for maintaining player physics
+	m_pCharacterController = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CCharacterControllerComponent>();
+	// Offset the default character controller up by one unit
+	m_pCharacterController->SetTransformMatrix(Matrix34::Create(Vec3(1.f), IDENTITY, Vec3(0, 0, 1.f)));
 
-	//Initialize the input and set up the base player params
-	InitializeInput();
-	SetPlayerParams();
+	// Create the advanced animation component, responsible for updating Mannequin and animating the player
+	m_pAnimationComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CAdvancedAnimationComponent>();
+	
+	// Set the player geometry, this also triggers physics proxy creation
+	m_pAnimationComponent->SetMannequinAnimationDatabaseFile("Animations/Mannequin/ADB/FirstPerson.adb");
+	m_pAnimationComponent->SetCharacterFile("Objects/Characters/TestPlayer/testplayer.cdf");
 
-	if (gEnv->IsEditor())
+	m_pAnimationComponent->SetControllerDefinitionFile("Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml");
+	m_pAnimationComponent->SetDefaultScopeContextName("FirstPersonCharacter");
+	// Queue the idle fragment to start playing immediately on next update
+	m_pAnimationComponent->SetDefaultFragmentName("Idle");
+
+	// Disable movement coming from the animation (root joint offset), we control this entirely via physics
+	m_pAnimationComponent->SetAnimationDrivenMotion(false);
+
+	// Load the character and Mannequin data from file
+	m_pAnimationComponent->LoadFromDisk();
+
+	// Acquire fragment and tag identifiers to avoid doing so each update
+	m_idleFragmentId = m_pAnimationComponent->GetFragmentId("Idle");
+	m_walkFragmentId = m_pAnimationComponent->GetFragmentId("Walk");
+	m_rotateTagId = m_pAnimationComponent->GetTagId("Rotate");
+
+	// Get the input component, wraps access to action mapping so we can easily get callbacks when inputs are triggered
+	m_pInputComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CInputComponent>();
+
+	// Register an action, and the callback that will be sent when it's triggered
+	m_pInputComponent->RegisterAction("player", "moveleft", [this](int activationMode, float value) { HandleInputFlagChange((TInputFlags)EInputFlag::MoveLeft, activationMode);  });
+	// Bind the 'A' key the "moveleft" action
+	m_pInputComponent->BindAction("player", "moveleft", eAID_KeyboardMouse,	EKeyId::eKI_A);
+
+	m_pInputComponent->RegisterAction("player", "moveright", [this](int activationMode, float value) { HandleInputFlagChange((TInputFlags)EInputFlag::MoveRight, activationMode);  });
+	m_pInputComponent->BindAction("player", "moveright", eAID_KeyboardMouse, EKeyId::eKI_D);
+
+	m_pInputComponent->RegisterAction("player", "moveforward", [this](int activationMode, float value) { HandleInputFlagChange((TInputFlags)EInputFlag::MoveForward, activationMode);  });
+	m_pInputComponent->BindAction("player", "moveforward", eAID_KeyboardMouse, EKeyId::eKI_W);
+
+	m_pInputComponent->RegisterAction("player", "moveback", [this](int activationMode, float value) { HandleInputFlagChange((TInputFlags)EInputFlag::MoveBack, activationMode);  });
+	m_pInputComponent->BindAction("player", "moveback", eAID_KeyboardMouse, EKeyId::eKI_S);
+
+	m_pInputComponent->RegisterAction("player", "mouse_rotateyaw", [this](int activationMode, float value) { m_mouseDeltaRotation.x -= value; });
+	m_pInputComponent->BindAction("player", "mouse_rotateyaw", eAID_KeyboardMouse, EKeyId::eKI_MouseX);
+
+	m_pInputComponent->RegisterAction("player", "mouse_rotatepitch", [this](int activationMode, float value) { m_mouseDeltaRotation.y -= value; });
+	m_pInputComponent->BindAction("player", "mouse_rotatepitch", eAID_KeyboardMouse, EKeyId::eKI_MouseY);
+
+	// Register the shoot action
+	m_pInputComponent->RegisterAction("player", "shoot", [this](int activationMode, float value)
 	{
-		//Create the character controller
-		m_pCharacterController = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CCharacterControllerComponent>();
-		m_pCharacterController->SetTransformMatrix(Matrix34::Create(Vec3(1.f), IDENTITY, Vec3(0, 0, 1.f)));
+		// Only fire on press, not release
+		if (activationMode == eIS_Pressed)
+		{
+			if (ICharacterInstance *pCharacter = m_pAnimationComponent->GetCharacter())
+			{
+				auto *pBarrelOutAttachment = pCharacter->GetIAttachmentManager()->GetInterfaceByName("barrel_out");
 
-		//Create the animation component and set the needed values
-		m_pAnimationComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CAdvancedAnimationComponent>();
-		m_pAnimationComponent->SetMannequinAnimationDatabaseFile("Animations/Mannequin/ADB/FirstPerson.adb");
-		m_pAnimationComponent->SetCharacterFile("Objects/Characters/SampleCharacter/firstperson.cdf");
+				if (pBarrelOutAttachment != nullptr)
+				{
+					QuatTS bulletOrigin = pBarrelOutAttachment->GetAttWorldAbsolute();
 
-		m_pAnimationComponent->SetControllerDefinitionFile("Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml");
-		m_pAnimationComponent->SetDefaultFragmentName("Idle");
-		m_pAnimationComponent->SetAnimationDrivenMotion(false);
+					SEntitySpawnParams spawnParams;
+					spawnParams.pClass = gEnv->pEntitySystem->GetClassRegistry()->GetDefaultClass();
 
-		m_pAnimationComponent->LoadFromDisk();
+					spawnParams.vPosition = bulletOrigin.t;
+					spawnParams.qRotation = bulletOrigin.q;
 
-		m_idleFragmentId = m_pAnimationComponent->GetFragmentId("Idle");
-		m_walkFragmentId = m_pAnimationComponent->GetFragmentId("Walk");
-		m_rotateTagId = m_pAnimationComponent->GetTagId("Rotate");
+					const float bulletScale = 0.05f;
+					spawnParams.vScale = Vec3(bulletScale);
 
-		Revive();
-	}
-	else
-	{
-		//Create the character controller
-		m_pCharacterController = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CCharacterControllerComponent>();
-		m_pCharacterController->SetTransformMatrix(Matrix34::Create(Vec3(1.f), IDENTITY, Vec3(0, 0, 1.f)));
+					// Spawn the entity
+					if (IEntity* pEntity = gEnv->pEntitySystem->SpawnEntity(spawnParams))
+					{
+						// See Bullet.cpp, bullet is propelled in  the rotation and position the entity was spawned with
+						pEntity->CreateComponentClass<CBulletComponent>();
+					}
+				}
+			}
+		}
+	});
 
-		//Create the animation component and set the needed values
-		m_pAnimationComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CAdvancedAnimationComponent>();
-		m_pAnimationComponent->SetMannequinAnimationDatabaseFile("Animations/Mannequin/ADB/FirstPerson.adb");
-		m_pAnimationComponent->SetCharacterFile("Objects/Characters/SampleCharacter/thirdperson.cdf");
+	// Bind the shoot action to left mouse click
+	m_pInputComponent->BindAction("player", "shoot", eAID_KeyboardMouse, EKeyId::eKI_Mouse1);
 
-		m_pAnimationComponent->SetControllerDefinitionFile("Animations/Mannequin/ADB/FirstPersonControllerDefinition.xml");
-		m_pAnimationComponent->SetDefaultFragmentName("Idle");
-		m_pAnimationComponent->SetAnimationDrivenMotion(false);
-
-		m_pAnimationComponent->LoadFromDisk();
-
-		m_idleFragmentId = m_pAnimationComponent->GetFragmentId("Idle");
-		m_walkFragmentId = m_pAnimationComponent->GetFragmentId("Walk");
-		m_rotateTagId = m_pAnimationComponent->GetTagId("Rotate");
-
-		Revive();
-	}
-
+	Revive();
 }
 
 uint64 CPlayerComponent::GetEventMask() const
@@ -111,24 +133,126 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 
 		// Update the camera component offset
 		UpdateCamera(pCtx->fFrameTime);
-
-		//The main updates
-		Update(pCtx->fFrameTime);
 	}
 	break;
 	}
 }
 
-void CPlayerComponent::ReflectType(Schematyc::CTypeDesc<CPlayerComponent>& desc)
+void CPlayerComponent::UpdateMovementRequest(float frameTime)
 {
-	desc.SetGUID("{63F4C0C6-32AF-4ACB-8FB0-57D45DD14725}"_cry_guid);
-	desc.SetEditorCategory("Players");
-	desc.SetLabel("Player Component");
+	// Don't handle input if we are in air
+	if (!m_pCharacterController->IsOnGround())
+		return;
 
-	desc.SetDescription("The main player component, needs to be used to create a player");
-	desc.SetComponentFlags({ IEntityComponent::EFlags::Transform, 
-		IEntityComponent::EFlags::Socket, 
-		IEntityComponent::EFlags::Attach });
+	Vec3 velocity = ZERO;
+
+	const float moveSpeed = 20.5f;
+
+	if (m_inputFlags & (TInputFlags)EInputFlag::MoveLeft)
+	{
+		velocity.x -= moveSpeed * frameTime;
+	}
+	if (m_inputFlags & (TInputFlags)EInputFlag::MoveRight)
+	{
+		velocity.x += moveSpeed * frameTime;
+	}
+	if (m_inputFlags & (TInputFlags)EInputFlag::MoveForward)
+	{
+		velocity.y += moveSpeed * frameTime;
+	}
+	if (m_inputFlags & (TInputFlags)EInputFlag::MoveBack)
+	{
+		velocity.y -= moveSpeed * frameTime;
+	}
+
+	m_pCharacterController->AddVelocity(GetEntity()->GetWorldRotation() * velocity);
+}
+
+void CPlayerComponent::UpdateLookDirectionRequest(float frameTime)
+{
+	const float rotationSpeed = 0.002f;
+	const float rotationLimitsMinPitch = -0.84f;
+	const float rotationLimitsMaxPitch = 1.5f;
+
+	// Apply smoothing filter to the mouse input
+	m_mouseDeltaRotation = m_mouseDeltaSmoothingFilter.Push(m_mouseDeltaRotation).Get();
+
+	// Update angular velocity metrics
+	m_horizontalAngularVelocity = (m_mouseDeltaRotation.x * rotationSpeed) / frameTime;
+	m_averagedHorizontalAngularVelocity.Push(m_horizontalAngularVelocity);
+
+	// Start with updating look orientation from the latest input
+	Ang3 ypr = CCamera::CreateAnglesYPR(Matrix33(m_lookOrientation));
+
+	// Yaw
+	ypr.x += m_mouseDeltaRotation.x * rotationSpeed;
+
+	// Pitch
+	// TODO: Perform soft clamp here instead of hard wall, should reduce rot speed in this direction when close to limit.
+	ypr.y = CLAMP(ypr.y + m_mouseDeltaRotation.y * rotationSpeed, rotationLimitsMinPitch, rotationLimitsMaxPitch);
+
+	// Roll (skip)
+	ypr.z = 0;
+
+	m_lookOrientation = Quat(CCamera::CreateOrientationYPR(ypr));
+
+	// Reset the mouse delta accumulator every frame
+	m_mouseDeltaRotation = ZERO;
+}
+
+void CPlayerComponent::UpdateAnimation(float frameTime)
+{
+	const float angularVelocityTurningThreshold = 0.174; // [rad/s]
+
+	// Update tags and motion parameters used for turning
+	const bool isTurning = std::abs(m_averagedHorizontalAngularVelocity.Get()) > angularVelocityTurningThreshold;
+	m_pAnimationComponent->SetTagWithId(m_rotateTagId, isTurning);
+	if (isTurning)
+	{
+		// TODO: This is a very rough predictive estimation of eMotionParamID_TurnAngle that could easily be replaced with accurate reactive motion 
+		// if we introduced IK look/aim setup to the character's model and decoupled entity's orientation from the look direction derived from mouse input.
+
+		const float turnDuration = 1.0f; // Expect the turning motion to take approximately one second.
+		m_pAnimationComponent->SetMotionParameter(eMotionParamID_TurnAngle, m_horizontalAngularVelocity * turnDuration);
+	}
+
+	// Update active fragment
+	const auto& desiredFragmentId = m_pCharacterController->IsWalking() ? m_walkFragmentId : m_idleFragmentId;
+	if (m_activeFragmentId != desiredFragmentId)
+	{
+		m_activeFragmentId = desiredFragmentId;
+		m_pAnimationComponent->QueueFragmentWithId(m_activeFragmentId);
+	}
+
+	// Update entity rotation as the player turns
+	// We only want to affect Z-axis rotation, zero pitch and roll
+	Ang3 ypr = CCamera::CreateAnglesYPR(Matrix33(m_lookOrientation));
+	ypr.y = 0;
+	ypr.z = 0;
+	const Quat correctedOrientation = Quat(CCamera::CreateOrientationYPR(ypr));
+
+	// Send updated transform to the entity, only orientation changes
+	GetEntity()->SetPosRotScale(GetEntity()->GetWorldPos(), correctedOrientation, Vec3(1, 1, 1));
+}
+
+void CPlayerComponent::UpdateCamera(float frameTime)
+{
+	Ang3 ypr = CCamera::CreateAnglesYPR(Matrix33(m_lookOrientation));
+
+	// Ignore z-axis rotation, that's set by CPlayerAnimations
+	ypr.x = 0;
+
+	// Start with changing view rotation to the requested mouse look orientation
+	Matrix34 localTransform = IDENTITY;
+	localTransform.SetRotation33(CCamera::CreateOrientationYPR(ypr));
+
+	// Offset the player along the forward axis (normally back)
+	// Also offset upwards
+	const float viewOffsetForward = -1.5f;
+	const float viewOffsetUp = 2.f;
+	localTransform.SetTranslation(Vec3(0, viewOffsetForward, viewOffsetUp));
+
+	m_pCameraComponent->SetTransformMatrix(localTransform);
 }
 
 void CPlayerComponent::Revive()
@@ -142,27 +266,20 @@ void CPlayerComponent::Revive()
 	// Make sure that the player spawns upright
 	GetEntity()->SetWorldTM(Matrix34::Create(Vec3(1, 1, 1), IDENTITY, GetEntity()->GetWorldPos()));
 
-	// Apply the character to the entity and queue animations
+	// Apply character to the entity
 	m_pAnimationComponent->ResetCharacter();
 	m_pCharacterController->Physicalize();
 
 	// Reset input now that the player respawned
 	m_inputFlags = 0;
 	m_mouseDeltaRotation = ZERO;
-	m_lookOrientation = IDENTITY;
-
 	m_mouseDeltaSmoothingFilter.Reset();
 
 	m_activeFragmentId = FRAGMENT_ID_INVALID;
 
+	m_lookOrientation = IDENTITY;
 	m_horizontalAngularVelocity = 0.0f;
 	m_averagedHorizontalAngularVelocity.Reset();
-
-	if (ICharacterInstance *pCharacter = m_pAnimationComponent->GetCharacter())
-	{
-		// Cache the camera joint id so that we don't need to look it up every frame in UpdateView
-		m_cameraJointId = pCharacter->GetIDefaultSkeleton().GetJointIDByName("head");
-	}
 }
 
 void CPlayerComponent::SpawnAtSpawnPoint()
@@ -188,30 +305,30 @@ void CPlayerComponent::SpawnAtSpawnPoint()
 	}
 }
 
-//Sets some base player params
-void CPlayerComponent::SetPlayerParams()
+void CPlayerComponent::HandleInputFlagChange(TInputFlags flags, int activationMode, EInputFlagType type)
 {
-	m_pCameraComponent->SetNearPlane(0.0001f);
-}
-
-//Picks up an item
-void CPlayerComponent::Pickup(SItemComponent * pNewItem)
-{
-	//If the item is null, return
-	if (!pNewItem)
+	switch (type)
 	{
-		return;
-	}
-
-	//Add the item to the inventory
-	if (GetInventory()->AddItem(pNewItem))
+	case EInputFlagType::Hold:
 	{
-		//Pick up the item
-		pNewItem->Pickup(m_pEntity);
-
-		if (pNewItem->GetItemType() == eIT_Weapon)
+		if (activationMode == eIS_Released)
 		{
-			//Attach to back
+			m_inputFlags &= ~flags;
 		}
+		else
+		{
+			m_inputFlags |= flags;
+		}
+	}
+	break;
+	case EInputFlagType::Toggle:
+	{
+		if (activationMode == eIS_Released)
+		{
+			// Toggle the bit(s)
+			m_inputFlags ^= flags;
+		}
+	}
+	break;
 	}
 }

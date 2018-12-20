@@ -84,20 +84,7 @@ void CGamePlugin::OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lp
 bool CGamePlugin::OnClientConnectionReceived(int channelId, bool bIsReset)
 {
 	// Connection received from a client, create a player entity and component
-	IEntityClass *pPlayerClass = gEnv->pEntitySystem->GetClassRegistry()->FindClass("schematyc::players::player_main");
 	SEntitySpawnParams spawnParams;
-
-	//If the player is spawn in a native game environment
-	//Otherwise just use the default player class
-	if (!gEnv->IsEditor())
-	{
-		spawnParams.pClass = pPlayerClass;
-	}
-	else
-	{
-		spawnParams.pClass = gEnv->pEntitySystem->GetClassRegistry()->GetDefaultClass();
-	}
-
 	spawnParams.pClass = gEnv->pEntitySystem->GetClassRegistry()->GetDefaultClass();
 	spawnParams.sName = "Player";
 	spawnParams.nFlags |= ENTITY_FLAG_NEVER_NETWORK_STATIC;
@@ -112,12 +99,12 @@ bool CGamePlugin::OnClientConnectionReceived(int channelId, bool bIsReset)
 	// Spawn the player entity
 	if (IEntity* pPlayerEntity = gEnv->pEntitySystem->SpawnEntity(spawnParams))
 	{
-		// Create the player component instance
-		CPlayerComponent* pPlayer = pPlayerEntity->GetOrCreateComponentClass<CPlayerComponent>();
-
 		// Set the local player entity channel id, and bind it to the network so that it can support Multiplayer contexts
 		pPlayerEntity->GetNetEntity()->SetChannelId(channelId);
 		pPlayerEntity->GetNetEntity()->BindToNetwork();
+
+		// Create the player component instance
+		CPlayerComponent* pPlayer = pPlayerEntity->GetOrCreateComponentClass<CPlayerComponent>();
 
 		// Push the component into our map, with the channel id as the key
 		m_players.emplace(std::make_pair(channelId, pPlayerEntity->GetId()));
