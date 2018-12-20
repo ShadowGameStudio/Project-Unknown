@@ -80,7 +80,7 @@
 					"bottomColor": { "r": 32, "g": 32, "b": 32, "a": 255 }
 				}
 			},
-			"playbackTime": 0.47617
+			"playbackTime": 11.32791
 		}
 	},
 	"dockWidgetManager": {
@@ -105,21 +105,22 @@
 						"expandedItems": [
 							"Characters",
 							"Skeletons",
-							"Animations (animations/testplayer/)",
+							"Animations (animations/motusanims/)",
+							"Animations (animations/motusanims/)|bspace",
 							"Skeletons|Objects",
 							"Characters|Objects",
 							"Characters|Objects|Characters",
-							"Characters|Objects|Characters|TestPlayer"
+							"Characters|Objects|Characters|SampleCharacter"
 						],
 						"selectedItems": [
-							"Animations (animations/testplayer/)|walk",
-							"Animations (animations/testplayer/)",
-							"Animations (animations/testplayer/)|8 KB",
-							"Animations (animations/testplayer/)|30",
-							"Animations (animations/testplayer/)",
-							"Animations (animations/testplayer/)"
+							"Animations (animations/motusanims/)|bspace|1DONE-BSpace_RotateRIFLE",
+							"Animations (animations/motusanims/)|bspace",
+							"Animations (animations/motusanims/)|bspace|0 KB",
+							"Animations (animations/motusanims/)|bspace|67",
+							"Animations (animations/motusanims/)|bspace",
+							"Animations (animations/motusanims/)|bspace"
 						],
-						"currentItem": "Animations (animations/testplayer/)|walk",
+						"currentItem": "Animations (animations/motusanims/)|bspace|1DONE-BSpace_RotateRIFLE",
 						"sectionsHidden": [ 1, 2, 3, 4, 5 ],
 						"sectionsVisible": [ 0 ]
 					}
@@ -141,7 +142,7 @@
 		"propertyTree": {
 			"focusedRow": [ ],
 			"selection": [ ],
-			"expanded": [ 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1 ]
+			"expanded": [ 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1 ]
 		},
 		"outlineMode": "oneTree"
 	},
@@ -158,24 +159,27 @@
 	"animEventPresetPanel": {
 		"palette": { "addWithSingleClick": false, "hotkeys": [ ] }
 	},
-	"recentCharacters": [ "Objects/Characters/TestPlayer/testplayer.cdf" ],
+	"recentCharacters": [
+		"Objects/Characters/SampleCharacter/thirdperson.cdf",
+		"Objects/Characters/TestPlayer/testplayer.cdf"
+	],
 	"windowGeometry": [
-		1, 217, 208, 203, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 125, 0, 0, 3, 248, 0, 0, 0, 0, 0, 0, 0, 0,
-		0, 0, 7, 125, 0, 0, 3, 248, 0, 0, 0, 0, 0, 0, 0, 0, 7, 128
+		1, 217, 208, 203, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 118, 0, 0, 2, 97, 0, 0, 0, 0, 0, 0, 0, 0,
+		0, 0, 5, 118, 0, 0, 2, 97, 0, 0, 0, 0, 0, 0, 0, 0, 7, 128
 	],
 	"windowState": [
-		0, 0, 0, 255, 0, 0, 0, 0, 253, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 127, 252, 2, 0, 0, 0, 1, 251,
+		0, 0, 0, 255, 0, 0, 0, 0, 253, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 232, 252, 2, 0, 0, 0, 1, 251,
 		0, 0, 0, 30, 0, 69, 0, 120, 0, 112, 0, 108, 0, 111, 0, 114, 0, 101, 0, 114, 0, 80, 0, 97, 0, 110, 0, 101, 0, 108, 0, 45,
-		0, 48, 1, 0, 0, 0, 19, 0, 0, 3, 127, 0, 0, 0, 121, 0, 255, 255, 255, 0, 0, 0, 1, 0, 0, 1, 30, 0, 0, 3, 127, 252,
+		0, 48, 1, 0, 0, 0, 19, 0, 0, 1, 232, 0, 0, 0, 121, 0, 255, 255, 255, 0, 0, 0, 1, 0, 0, 1, 30, 0, 0, 1, 232, 252,
 		2, 0, 0, 0, 4, 251, 0, 0, 0, 32, 0, 115, 0, 99, 0, 101, 0, 110, 0, 101, 0, 95, 0, 112, 0, 97, 0, 114, 0, 97, 0, 109,
-		0, 101, 0, 116, 0, 101, 0, 114, 0, 115, 1, 0, 0, 0, 19, 0, 0, 0, 183, 0, 0, 0, 23, 0, 255, 255, 255, 251, 0, 0, 0, 20,
-		0, 112, 0, 114, 0, 111, 0, 112, 0, 101, 0, 114, 0, 116, 0, 105, 0, 101, 0, 115, 1, 0, 0, 0, 208, 0, 0, 2, 194, 0, 0, 0,
+		0, 101, 0, 116, 0, 101, 0, 114, 0, 115, 1, 0, 0, 0, 19, 0, 0, 0, 98, 0, 0, 0, 23, 0, 255, 255, 255, 251, 0, 0, 0, 20,
+		0, 112, 0, 114, 0, 111, 0, 112, 0, 101, 0, 114, 0, 116, 0, 105, 0, 101, 0, 115, 1, 0, 0, 0, 123, 0, 0, 1, 128, 0, 0, 0,
 		94, 0, 255, 255, 255, 251, 0, 0, 0, 38, 0, 98, 0, 108, 0, 101, 0, 110, 0, 100, 0, 95, 0, 115, 0, 112, 0, 97, 0, 99, 0, 101,
 		0, 95, 0, 112, 0, 114, 0, 101, 0, 118, 0, 105, 0, 101, 0, 119, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 223, 0, 255, 255,
 		255, 251, 0, 0, 0, 36, 0, 97, 0, 110, 0, 105, 0, 109, 0, 95, 0, 101, 0, 118, 0, 101, 0, 110, 0, 116, 0, 95, 0, 112, 0, 114,
 		0, 101, 0, 115, 0, 101, 0, 116, 0, 115, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 85, 0, 255, 255, 255, 0, 0, 0, 3, 0,
-		0, 7, 126, 0, 0, 0, 97, 252, 1, 0, 0, 0, 1, 251, 0, 0, 0, 16, 0, 112, 0, 108, 0, 97, 0, 121, 0, 98, 0, 97, 0, 99,
-		0, 107, 1, 0, 0, 0, 0, 0, 0, 7, 126, 0, 0, 1, 176, 0, 255, 255, 255, 0, 0, 5, 84, 0, 0, 3, 127, 0, 0, 0, 4, 0,
+		0, 5, 119, 0, 0, 0, 97, 252, 1, 0, 0, 0, 1, 251, 0, 0, 0, 16, 0, 112, 0, 108, 0, 97, 0, 121, 0, 98, 0, 97, 0, 99,
+		0, 107, 1, 0, 0, 0, 0, 0, 0, 5, 119, 0, 0, 1, 176, 0, 255, 255, 255, 0, 0, 3, 77, 0, 0, 1, 232, 0, 0, 0, 4, 0,
 		0, 0, 4, 0, 0, 0, 8, 0, 0, 0, 8, 252, 0, 0, 0, 0
 	]
 }

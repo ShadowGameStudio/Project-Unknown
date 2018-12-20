@@ -5929,6 +5929,185 @@
 			"dependencies": [ ]
 		},
 		{
+			"type": "Level",
+			"guid": "ea549369-1660-dfe3-fd4d-f82b9ca5d1c9",
+			"name": "examplet",
+			"timestamp": 1545343940,
+			"files": [ "Levels/examplet/examplet.level" ],
+			"source": "",
+			"metadata": "Levels/examplet.level.cryasset",
+			"details": [ ],
+			"dependencies": [
+				{ "path": "%editor%/crydesigner_timeofday.xml", "usageCount": 0 },
+				{ "path": "%editor%/default_time_of_day.xml", "usageCount": 0 },
+				{ "path": "%editor%/leveltemplates.xml", "usageCount": 0 },
+				{ "path": "%editor%/mapscreenshotsettings.xml", "usageCount": 0 },
+				{ "path": "%editor%/mbttemplates.xml", "usageCount": 0 },
+				{ "path": "%editor%/modellingpanel.xml", "usageCount": 0 },
+				{ "path": "%editor%/objecttemplates.xml", "usageCount": 0 },
+				{ "path": "%editor%/propertyenumerations.xml", "usageCount": 0 },
+				{ "path": "%editor%/soundtemplates.xml", "usageCount": 0 },
+				{ "path": "%editor%/toolbox.xml", "usageCount": 0 },
+				{ "path": "%editor%/usertools.xml", "usageCount": 0 },
+				{
+					"path": "%engine%/engineassets/icons/averagememoryusage.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/icons/highmemoryusage.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/icons/livepreview.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/icons/lowmemoryusage.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/fogvolumebox.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/fogvolumeellipsoid.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceaninto.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceanintolowspec.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceanoutof.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/material_terrain_default.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/sky/sky.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/water/ocean_default.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/water/wateroceanbottom.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/objects/primitive_sphere.cgf",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/texturemsg/defaultnouvs.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/textures/defaults/16_12.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/textures/defaults/16_34.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/textures/defaults/16_5.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/textures/defaults/16_grey.dds",
+					"usageCount": 0
+				},
+				{ "path": "%engine%/engineassets/textures/grey.dds", "usageCount": 0 },
+				{
+					"path": "%engine%/engineassets/textures/skys/night/half_moon.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/mannequin/adb/firstpersoncontrollerdefinition.xml",
+					"usageCount": 0
+				},
+				{
+					"path": "animations/mannequin/adb/playerfragmentids.xml",
+					"usageCount": 0
+				},
+				{ "path": "animations/mannequin/adb/playertags.xml", "usageCount": 0 },
+				{ "path": "animations/testplayer/idle.caf", "usageCount": 0 },
+				{ "path": "animations/testplayer/walk.caf", "usageCount": 0 },
+				{
+					"path": "objects/characters/testplayer/testplayer.cdf",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/testplayer.chr",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/testplayer.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_body_ddna.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_body_diff.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_body_spec.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_bottom_ spec.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_bottom_ddna.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_bottom_diff.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_shoes_ddna.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_shoes_diff.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_shoes_spec.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_top_ddna.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_top_diff.dds",
+					"usageCount": 0
+				},
+				{
+					"path": "objects/characters/testplayer/textures/testplayer_top_spec.dds",
+					"usageCount": 0
+				}
+			]
+		},
+		{
 			"type": "Xml",
 			"guid": "acf1acd1-3a16-3c99-fb3f-965fe6b9cc23",
 			"name": "defaultprofile",
