@@ -282,6 +282,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\SpawnPoint.cpp" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\Bullet.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\SpawnPoint.h" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\HealthComponent.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\HealthComponent.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\Player.cpp" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\PlayerInput.cpp" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\PlayerUpdate.cpp" />
@@ -291,6 +293,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.cpp" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemComponent.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemProperties.h" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.h" />
     <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Code_uber.cpp"  />
     <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Components_uber.cpp"  />
     <ResourceCompile Include="C:\Programing\Project-Unknown\solutions\win64\Game.autogen.rc"  />

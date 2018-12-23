@@ -1,0 +1,78 @@
+<CrySchematyc CryXmlVersion="2" version="105" guid="22bb5ea2-5282-4bed-9067-83b432af4e99" scope="">
+ <root elementType="Class" guid="2edaec26-9956-408a-b0bd-ae8be53a1032" name="Bandage">
+  <userDocumentation author="xXRag" description=""/>
+  <extensions />
+  <children>
+   <element elementType="Constructor" guid="9c1e52e7-3790-49b5-b76d-348d80860ef2" name="ConstructionGraph">
+    <userDocumentation author="xXRag" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="4f0cfc9b-7e5b-4281-97ae-3348480c6ee3" typeGUID="12bdfa06-ba95-4e48-bb2d-bb48a7080abc">
+        <value guid="4f0cfc9b-7e5b-4281-97ae-3348480c6ee3">
+         <pos x="0" y="0"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="SignalReceiver" guid="f259415b-738b-4cb9-8380-06580179d3a1" name="SignalGraph" type="Universal" signalGUID="">
+    <userDocumentation author="xXRag" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="5e401c66-dc33-4161-8113-99fcac1101cd" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="5e401c66-dc33-4161-8113-99fcac1101cd" objectGUID="">
+         <pos x="0" y="100"/>
+         <signalId domain="Env" guid="52ad5add-7781-429b-b4a9-0cb6c905e353"/>
+        </value>
+       </element>
+       <element key="0075d36b-ffd1-4f10-9312-c995f2ccff37" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="0075d36b-ffd1-4f10-9312-c995f2ccff37" objectGUID="">
+         <pos x="0" y="0"/>
+         <signalId domain="Env" guid="a9279137-7c66-491d-b9a0-8752c24c8979"/>
+        </value>
+       </element>
+       <element key="f83e73d1-547d-4f64-bdfa-4f8041efefda" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="f83e73d1-547d-4f64-bdfa-4f8041efefda" objectGUID="">
+         <pos x="0" y="200"/>
+         <signalId domain="Env" guid="b2561caa-0753-458b-a91f-e8e38b0f0cdf"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="Base" guid="f3333ad5-6e7f-4c8e-b58a-c9e8b267e530" name="Base [Entity]">
+    <classId domain="Env" guid="be845278-0dd2-409f-b8be-97895607c256"/>
+    <envClassProperties icon="%EDITOR%/objecticons/schematyc.bmp" bHideInEditor="false" bTriggerAreas="true" bCreatePerClient="false"/>
+    <extensions />
+    <children>
+     <element elementType="ComponentInstance" guid="53732cdb-2ae3-49ab-9a25-96f41bee94ed" name="Entity" accessor="Private" typeGUID="e88093df-904f-4c52-af38-911e26777cdc">
+      <properties />
+      <extensions />
+      <children />
+     </element>
+    </children>
+   </element>
+   <element elementType="ComponentInstance" guid="175747df-8501-433b-a825-ec833ca0ee20" name="Medical Item Component" accessor="Private" typeGUID="fb215b01-3415-4a69-b6b4-6c0c40437fcc">
+    <properties>
+     <ItemProperties ItemLevel="1" ItemType="Food">
+      <RenderProperties GeometryPath="Objects/Weapons/SampleWeapon/defaultweapon.cgf" MaterialPath=""/>
+      <PhysicsProperties Mass="0"/>
+     </ItemProperties>
+     <MedicalProperties HealthAmount="5"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+  </children>
+ </root>
+</CrySchematyc>

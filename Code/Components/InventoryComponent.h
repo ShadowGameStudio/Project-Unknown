@@ -38,6 +38,11 @@ public:
 	void SelectSlot(int slotId);
 
 	void DetachFromHand();
+	void DetachFromBack(int slotId);
+	void SelectItem(SItemComponent *pItemToSelect);
+
+	void AttachToBack(SItemComponent *pWeaponToAttach, int slotId);
+	void AttachToHand(SItemComponent *pItemToAttach);
 
 	//Getting
 	int GetSelectedWeapon();

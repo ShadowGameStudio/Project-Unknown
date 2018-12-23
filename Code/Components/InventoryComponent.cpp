@@ -65,22 +65,46 @@ void CInventoryComponent::SelectSlot(int slotId)
 	//Check if it's a weapon, if it is attach it to the back
 	if (m_pSelectedItem->GetItemType() == eIT_Weapon)
 	{
-
+		DetachFromHand();
+		AttachToBack(m_pSelectedItem, GetSelectableSlotsIndex(m_pSelectedItem));
+		m_pSelectedItem = nullptr;
 	}
 	else
 	{
 		//Detach the item from the hand
 		DetachFromHand();
-
-		//Add the item to the inventory again
-		AddItem(m_pSelectedItem);
+		m_pSelectedItem = nullptr;
 	}
 
-	//if (m_pLastSelectedItem != )
-	//{
+	//If the item isn't already selected, select it
+	if (m_pLastSelectedItem != m_pSelectableSlots[slotId])
+	{
+		SelectItem(m_pSelectableSlots[slotId]);
+	}
 
-	//}
+}
 
+//Selects an item
+void CInventoryComponent::SelectItem(SItemComponent * pItemToSelect)
+{
+	//Check that the item isn't null
+	if (!pItemToSelect)
+	{
+		return;
+	}
+
+	if (pItemToSelect->GetItemType() == eIT_Weapon)
+	{
+		//Detach the item from the back and attach it to the hand
+		DetachFromBack(GetSelectableSlotsIndex(pItemToSelect));
+		m_pSelectedItem = pItemToSelect;
+		AttachToHand(pItemToSelect);
+	}
+	else
+	{
+		m_pSelectedItem = pItemToSelect;
+		AttachToHand(pItemToSelect);
+	}
 }
 
 //Detaches the currently selected item from the hand
@@ -105,6 +129,98 @@ void CInventoryComponent::DetachFromHand()
 			}
 		}
 	}
+}
+
+//Detaches an item from the back
+void CInventoryComponent::DetachFromBack(int slotId)
+{
+	//Check that the slot id isn't invalid
+	if (slotId < 0)
+	{
+		return;
+	}
+
+	//Create string from slot id and get the player component
+	string slotString = ToString(slotId);
+	CPlayerComponent *pPlayer = m_pEntity->GetComponent<CPlayerComponent>();
+
+	//Get the players character and the attachments of it
+	if (ICharacterInstance *pCharacter = pPlayer->GetAnimations()->GetCharacter())
+	{
+		if (IAttachmentManager *pAttMan = pCharacter->GetIAttachmentManager())
+		{
+			//The string to hold the attachment name
+			string attName = "back_att_0" + slotString;
+
+			//Get the attachment and clear the binding
+			if (IAttachment *pAttachment = pAttMan->GetInterfaceByName(attName))
+			{
+				pAttachment->ClearBinding();
+			}
+		} 
+	}
+}
+
+void CInventoryComponent::AttachToBack(SItemComponent * pWeaponToAttach, int slotId)
+{
+	//Check the weapon to attach and the slot id
+	if (!pWeaponToAttach || slotId < 0)
+	{
+		return;
+	}
+
+	string slotString = ToString(slotId);
+	CPlayerComponent *pPlayer = m_pEntity->GetComponent<CPlayerComponent>();
+	CEntityAttachment *pAttachmentWeapon = new CEntityAttachment();
+
+	pAttachmentWeapon->SetEntityId(pWeaponToAttach->GetEntityId());
+
+	if (ICharacterInstance *pCharacter = pPlayer->GetAnimations()->GetCharacter())
+	{
+		if (IAttachmentManager *pAttMan = pCharacter->GetIAttachmentManager())
+		{
+			string attName = "back_att_0" + slotString;
+
+			if (IAttachment *pAttachment = pAttMan->GetInterfaceByName(attName))
+			{
+				pAttachment->AddBinding(pAttachmentWeapon);
+			}
+		}
+	}
+}
+
+//Attaches an item to the hand
+void CInventoryComponent::AttachToHand(SItemComponent * pItemToAttach)
+{
+	//If the item to attach is null, return
+	if (!pItemToAttach)
+	{
+		return;
+	}
+
+	//Get the player component and create and attachment item
+	CPlayerComponent *pPlayer = m_pEntity->GetComponent<CPlayerComponent>();
+	CEntityAttachment *pAttachmentItem = new CEntityAttachment();
+
+	//Set the attachment item
+	pAttachmentItem->SetEntityId(pItemToAttach->GetEntityId());
+
+	//Get the player character and it's attachments
+	if (ICharacterInstance *pCharacter = pPlayer->GetAnimations()->GetCharacter())
+	{
+		if (IAttachmentManager *pAttMan = pCharacter->GetIAttachmentManager())
+		{
+			//The attachment name
+			string attName = "hand";
+
+			//Get the attachment and bind it
+			if (IAttachment *pAttachment = pAttMan->GetInterfaceByName(attName))
+			{
+				pAttachment->AddBinding(pAttachmentItem);
+			}
+		}
+	}
+
 }
 
 //Gets the weapon in the hand

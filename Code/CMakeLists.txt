@@ -27,6 +27,10 @@ add_sources("Components_uber.cpp"
 		"Components/SpawnPoint.cpp"
 		"Components/Bullet.h"
 		"Components/SpawnPoint.h"
+		
+	SOURCE_GROUP "Components\\\\Entities"
+		"Components/HealthComponent.cpp"
+		"Components/HealthComponent.h"
 
 	SOURCE_GROUP "Components\\\\Player"
 		"Components/Player.cpp"
@@ -42,6 +46,10 @@ add_sources("Components_uber.cpp"
 		"Components/ItemComponent.cpp"
 		"Components/ItemComponent.h"
 		"Components/ItemProperties.h"
+
+	SOURCE_GROUP "Components\\\\Items\\\\Gameplay"
+		"Components/MedicalItemComponent.cpp"
+		"Components/MedicalItemComponent.h"
 )
 
 end_sources()

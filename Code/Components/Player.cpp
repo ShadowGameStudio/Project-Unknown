@@ -78,6 +78,8 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 
 		// Update the camera component offset
 		UpdateCamera(pCtx->fFrameTime);
+
+		Update(pCtx->fFrameTime);
 	}
 	break;
 	}

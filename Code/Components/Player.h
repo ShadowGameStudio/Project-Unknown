@@ -133,7 +133,6 @@ protected:
 
 	//Main
 	void SpawnAtSpawnPoint();
-	void SetPlayerParams();
 	void Pickup(SItemComponent *pNewItem);
 
 protected:
@@ -142,7 +141,7 @@ protected:
 	Cry::DefaultComponents::CAdvancedAnimationComponent* m_pAnimationComponent = nullptr;
 	Cry::DefaultComponents::CInputComponent* m_pInputComponent = nullptr;
 
-	CInventoryComponent *m_pInventoryComponent = nullptr;
+	CInventoryComponent* m_pInventoryComponent = nullptr;
 	SItemComponent* m_pTargetItem = nullptr;
 
 	FragmentID m_idleFragmentId;

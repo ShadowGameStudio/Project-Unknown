@@ -46,6 +46,7 @@
   <Path>objects/characters/testplayer/textures/testplayer_top_ddna.dds</Path>
   <Path>objects/characters/testplayer/textures/testplayer_top_diff.dds</Path>
   <Path>objects/characters/testplayer/textures/testplayer_top_spec.dds</Path>
-  <Path>scripts/ai/factions.xml</Path>
+  <Path>objects/weapons/sampleweapon/defaultweapon.cgf</Path>
+  <Path>objects/weapons/sampleweapon/defaultweapon.mtl</Path>
  </Dependencies>
 </AssetMetadata>
