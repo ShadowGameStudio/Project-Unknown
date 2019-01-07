@@ -21,14 +21,19 @@ void CHealthComponent::ProcessEvent(const SEntityEvent & event)
 	}
 }
 
+//Called every update and regenerates the players health
 void CHealthComponent::RegenerateHealth(float frameTime)
 {
+	//Check that it always should regenerate, that it actually should regenerate and that the player is alive
 	if (GetAlwaysRegenerate() && m_ShouldRegenerate && m_IsAlive)
 	{
-
+		//Add the ratio to the health
+		GetHealthProperties()->health += GetRegenerationRatio();
 	}
 }                                                                                                                                         
 
 void CHealthComponent::KillEntity()
 {
+	//Removes the entity from the system
+	gEnv->pEntitySystem->RemoveEntity(m_pEntity->GetId());
 }

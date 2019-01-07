@@ -295,6 +295,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\ItemProperties.h" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.cpp" />
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.h" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIControllerComponent.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIViewController.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIUpdater.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIComponent.cpp" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIControllerComponent.h" />
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIComponent.h" />
     <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Code_uber.cpp"  />
     <ClCompile Include="C:\Programing\Project-Unknown\solutions\win64\Components_uber.cpp"  />
     <ResourceCompile Include="C:\Programing\Project-Unknown\solutions\win64\Game.autogen.rc"  />

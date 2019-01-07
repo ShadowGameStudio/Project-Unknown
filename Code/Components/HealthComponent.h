@@ -35,9 +35,9 @@ public:
 	CHealthComponent() = default;
 	virtual ~CHealthComponent() {}
 
-	void Initialize() override;
-	uint64 GetEventMask() const override;
-	void ProcessEvent(const SEntityEvent& event) override;
+	virtual void Initialize() override;
+	virtual uint64 GetEventMask() const override;
+	virtual void ProcessEvent(const SEntityEvent& event) override;
 
 	// Reflect type to set a unique identifier for this component
 	// and provide additional information to expose it in the sandbox

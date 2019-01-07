@@ -158,7 +158,7 @@
             "foldersSplitter": "AAAA/wAAAAEAAAACAAABAAAAAwAB/////wEAAAABAA==",
             "foldersView": {
                 "selected": [
-                    "Items"
+                    "AIs"
                 ]
             },
             "mainViewSplitter": "AAAA/wAAAAEAAAACAAAARAAAAQAB/////wEAAAABAA==",
@@ -192,6 +192,8 @@
     },
     "Schematyc Editor": {
         "Recent Files": [
+            "AIs/test_ai.schematyc_ent.cryasset",
+            "AIs/Test_AI.schematyc_ent.cryasset",
             "Items/Bandage.schematyc_ent.cryasset"
         ]
     }

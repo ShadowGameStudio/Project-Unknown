@@ -10,4 +10,8 @@
 #include <C:/Programing/Project-Unknown/Code/Components/InventoryComponent.cpp>
 #include <C:/Programing/Project-Unknown/Code/Components/ItemComponent.cpp>
 #include <C:/Programing/Project-Unknown/Code/Components/MedicalItemComponent.cpp>
+#include <C:/Programing/Project-Unknown/Code/Components/AIControllerComponent.cpp>
+#include <C:/Programing/Project-Unknown/Code/Components/AIViewController.cpp>
+#include <C:/Programing/Project-Unknown/Code/Components/AIUpdater.cpp>
+#include <C:/Programing/Project-Unknown/Code/Components/AIComponent.cpp>
 

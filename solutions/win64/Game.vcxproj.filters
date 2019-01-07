@@ -61,6 +61,24 @@
     <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\MedicalItemComponent.h">
       <Filter>Components\Items\Gameplay</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIControllerComponent.cpp">
+      <Filter>Components\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIViewController.cpp">
+      <Filter>Components\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIUpdater.cpp">
+      <Filter>Components\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIComponent.cpp">
+      <Filter>Components\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIControllerComponent.h">
+      <Filter>Components\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programing\Project-Unknown\Code\Components\AIComponent.h">
+      <Filter>Components\AI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Programing\Project-Unknown\Code\CMakeLists.txt" />
@@ -77,15 +95,6 @@
     <Filter Include="Components\Player\Components">
       <UniqueIdentifier>{AC2D02BC-9C06-3126-9A7F-56C083C10935}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Components">
-      <UniqueIdentifier>{381546CF-2F42-321B-BC73-AACD594262B5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UBER FILES">
-      <UniqueIdentifier>{6F330AEE-63DB-384A-9265-199A03FC7596}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{F8F3A46B-2EA7-3E85-9184-AFB27ABCA2D2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Components\Entities">
       <UniqueIdentifier>{88CBC506-3736-37E8-93FD-3701FC31ECD0}</UniqueIdentifier>
     </Filter>
@@ -94,6 +103,18 @@
     </Filter>
     <Filter Include="Components\Items">
       <UniqueIdentifier>{7093C856-E78B-363F-BDFB-43FBA806B1C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\AI">
+      <UniqueIdentifier>{59134797-762D-3555-B76D-007591731E65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{381546CF-2F42-321B-BC73-AACD594262B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UBER FILES">
+      <UniqueIdentifier>{6F330AEE-63DB-384A-9265-199A03FC7596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{F8F3A46B-2EA7-3E85-9184-AFB27ABCA2D2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
