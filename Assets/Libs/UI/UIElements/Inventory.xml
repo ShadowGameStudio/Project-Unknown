@@ -1,0 +1,44 @@
+<UIElements name="Inventory">
+	<UIElement name="Inventory">
+		<Gfx file="Inventory.gfx" layer="1">
+			<Constraints>
+				<Align mode="dynamic" valign="center" halign="center" scale="1" max="1"/>
+			</Constraints>
+		</Gfx>
+		<functions>
+			<function name="Initialize" funcname="Initialize" desc=""/>
+			
+			<function name="AddItem" funcname="AddItem" desc="">
+				<param name="slot_id" desc="" type="int"/>
+				<param name="name" desc="" type="string"/>
+				<param name="id" desc="" type="int"/>
+				<param name="type" desc="" type="int"/>
+			</function>
+			
+			<function name="Show" funcname="Show" desc="">
+				<param name="Show" desc="" type="bool"/>
+			</function>
+		</functions>
+		<events>
+			<event name="EmptySlot" funcname="EmptySlot" desc="">
+				<param name="item.slot" desc="" type="int"/>
+			</event>
+			
+			<event name="FillSlot" funcname="FillSlot" desc="">
+				<param name="item.id" desc="" type="int"/>
+			</event>
+			
+			<event name="DropItem" funcname="DropItem" desc="">
+				<param name="item.id" desc="" type="int"/>
+			</event>
+		</events>
+		
+		<variables>
+			<variable name="intSlotId" funcname="invSlotId" desc=""/>
+		</variables>
+		<Arrays>
+        </Arrays>
+        <MovieClips>
+        </MovieClips>
+	</UIElement>
+</UIElements>

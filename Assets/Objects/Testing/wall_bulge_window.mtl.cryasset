@@ -1,0 +1,20 @@
+<AssetMetadata version="0" type="Material" guid="da263821-523f-6f69-336f-e0a8d15293ef">
+ <Files>
+  <File path="wall_bulge_window.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">5</Detail>
+  <Detail name="textureCount">9</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="3">textures/defaults/white.dds</Path>
+  <Path usageCount="3">Objects/pbs_reference/gloss0_ddna.dds</Path>
+  <Path usageCount="1">Materials/substance/wall_concrete/wall_concrete_diff.dds</Path>
+  <Path usageCount="1">Materials/substance/wall_concrete/wall_concrete_ddna.dds</Path>
+  <Path usageCount="1">Materials/substance/wall_concrete/wall_concrete_spec.dds</Path>
+  <Path usageCount="1">Materials/substance/concrete/concrete_diff.dds</Path>
+  <Path usageCount="1">Materials/substance/concrete/concrete_ddna.dds</Path>
+  <Path usageCount="1">Materials/substance/concrete/concrete_spec.dds</Path>
+  <Path usageCount="1">Materials/substance/concrete/concrete_height.dds</Path>
+ </Dependencies>
+</AssetMetadata>

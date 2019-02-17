@@ -5954,7 +5954,7 @@
 			"type": "Level",
 			"guid": "ea549369-1660-dfe3-fd4d-f82b9ca5d1c9",
 			"name": "examplet",
-			"timestamp": 1545392134,
+			"timestamp": 1550432158,
 			"files": [ "Levels/examplet/examplet.level" ],
 			"source": "",
 			"metadata": "Levels/examplet.level.cryasset",
@@ -6127,7 +6127,8 @@
 				{
 					"path": "objects/weapons/sampleweapon/defaultweapon.mtl",
 					"usageCount": 0
-				}
+				},
+				{ "path": "scripts/ai/factions.xml", "usageCount": 0 }
 			]
 		},
 		{
@@ -6739,6 +6740,72 @@
 				{ "key": "width", "value": "512" }
 			],
 			"dependencies": [ ]
+		},
+		{
+			"type": "Mesh",
+			"guid": "b0be782e-5ba1-fcb0-6080-979146071a7d",
+			"name": "wall_budge_window",
+			"timestamp": 1525446110,
+			"files": [ "Objects/Testing/wall_budge_window.cgf" ],
+			"source": "Objects/Testing/Wall_bulge_window.fbx",
+			"metadata": "Objects/Testing/wall_budge_window.cgf.cryasset",
+			"details": [
+				{ "key": "16BitPrecision", "value": "false" },
+				{ "key": "materialCount", "value": "6" },
+				{ "key": "triangleCount", "value": "3136" },
+				{ "key": "vertexCount", "value": "3751" }
+			],
+			"dependencies": [
+				{
+					"path": "Objects/modules/apartment/wall_bulge_window.mtl",
+					"usageCount": 1
+				}
+			]
+		},
+		{
+			"type": "Material",
+			"guid": "da263821-523f-6f69-336f-e0a8d15293ef",
+			"name": "wall_bulge_window",
+			"timestamp": 1525446111,
+			"files": [ "Objects/Testing/wall_bulge_window.mtl" ],
+			"source": "",
+			"metadata": "Objects/Testing/wall_bulge_window.mtl.cryasset",
+			"details": [
+				{ "key": "subMaterialCount", "value": "5" },
+				{ "key": "textureCount", "value": "9" }
+			],
+			"dependencies": [
+				{ "path": "textures/defaults/white.dds", "usageCount": 3 },
+				{ "path": "Objects/pbs_reference/gloss0_ddna.dds", "usageCount": 3 },
+				{
+					"path": "Materials/substance/wall_concrete/wall_concrete_diff.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Materials/substance/wall_concrete/wall_concrete_ddna.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Materials/substance/wall_concrete/wall_concrete_spec.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Materials/substance/concrete/concrete_diff.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Materials/substance/concrete/concrete_ddna.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Materials/substance/concrete/concrete_spec.dds",
+					"usageCount": 1
+				},
+				{
+					"path": "Materials/substance/concrete/concrete_height.dds",
+					"usageCount": 1
+				}
+			]
 		},
 		{
 			"type": "Mesh",

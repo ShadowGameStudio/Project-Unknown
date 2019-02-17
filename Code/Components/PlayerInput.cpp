@@ -22,6 +22,9 @@ void CPlayerComponent::InitializeInput()
 	m_pInputComponent->RegisterAction("player", "mouse_rotatepitch", [this](int activationMode, float value) { m_mouseDeltaRotation.y -= value; });
 	m_pInputComponent->BindAction("player", "mouse_rotatepitch", eAID_KeyboardMouse, EKeyId::eKI_MouseY);
 
+	m_pInputComponent->RegisterAction("player", "use", [this](int activationMode, float value) { Action_Use(activationMode); });
+	m_pInputComponent->BindAction("player", "use", eAID_KeyboardMouse, EKeyId::eKI_F);
+
 	// Register the shoot action
 	m_pInputComponent->RegisterAction("player", "shoot", [this](int activationMode, float value)
 	{

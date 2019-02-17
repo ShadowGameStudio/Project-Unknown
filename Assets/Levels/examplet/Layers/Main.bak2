@@ -1,3 +1,36 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="068858a3-172f-4213-51d5-20db21ff58c0" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1"/>
+ <Layer Name="Main" FullName="Main" GUID="068858a3-172f-4213-51d5-20db21ff58c0" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Main" LayerGUID="068858a3-172f-4213-51d5-20db21ff58c0" Id="821955fd-9720-d22d-7712-aff46fc9c0ea" Name="items::bandage-1" Pos="513.25092,516.35193,32.108002" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="schematyc::items::bandage" ClassGUID="2edaec26-9956-408a-b0bd-ae8be53a1032" HasEntity="1">
+    <Properties />
+    <SchematycProperties CryXmlVersion="2">
+     <components />
+     <variables />
+    </SchematycProperties>
+   </Object>
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="068858a3-172f-4213-51d5-20db21ff58c0" Id="475752f8-610a-220d-d689-ea876984b857" Name="Entity-1" Pos="509.42676,519.13708,32.183804" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="a0afe0f6-dfd0-24b7-aa97-9ea7480b69ba" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties />
+     </Component>
+    </Components>
+   </Object>
+  </LayerObjects>
+ </Layer>
 </ObjectLayer>

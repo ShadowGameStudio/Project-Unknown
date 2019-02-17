@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="b0be782e-5ba1-fcb0-6080-979146071a7d" source="Wall_bulge_window.fbx">
+ <Files>
+  <File path="wall_budge_window.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">6</Detail>
+  <Detail name="triangleCount">3136</Detail>
+  <Detail name="vertexCount">3751</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">Objects/modules/apartment/wall_bulge_window.mtl</Path>
+ </Dependencies>
+</AssetMetadata>
