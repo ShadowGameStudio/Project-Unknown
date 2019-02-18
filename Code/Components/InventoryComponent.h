@@ -4,6 +4,7 @@
 
 #include <vector>
 #include "ItemComponent.h"
+#include <FlashUI/FlashUI.h>
 
 #define SELECTABLE_SLOTS 5
 
@@ -43,6 +44,7 @@ public:
 
 	void AttachToBack(SItemComponent *pWeaponToAttach, int slotId);
 	void AttachToHand(SItemComponent *pItemToAttach);
+	void Show();
 
 	//Getting
 	int GetSelectedWeapon();
@@ -52,15 +54,27 @@ public:
 	int GetSelectableSlotsIndex(SItemComponent *pItem);
 	float GetInventorySpaceLeft() { return m_CurrentWeightLeft; }
 
+	//Setting
+	void SetInventoryOpen(bool state) { m_InventoryOpen = state; }
+
 private:
 
 	//Member vars
 	std::vector<SItemComponent*> m_pInventory = {};
 	SItemComponent* m_pSelectableSlots[SELECTABLE_SLOTS];
+	bool m_InventoryOpen = false;
 
 	float m_CurrentWeightLeft = 200.f;
 	SItemComponent *m_pLastSelectedItem = nullptr;
 	SItemComponent *m_pSelectedItem = nullptr;
 
+	//UI
+	IUIElement *m_pUIInventory;
+	IUIAction *m_pInventoryShow;
+	IUIAction *m_pInventoryHide;
+
+	IUIAction *m_pInventoryShowCursor;
+	IUIAction *m_pInventoryHideCursor;
+	IUIActionManager *m_pManager;
 };
 

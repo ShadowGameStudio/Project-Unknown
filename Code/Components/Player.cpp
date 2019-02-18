@@ -152,7 +152,7 @@ void CPlayerComponent::Pickup(SItemComponent * pNewItem)
 
 		if (pNewItem->GetItemType() == eIT_Weapon)
 		{
-			//Attach to back
+
 		}
 	}
 }

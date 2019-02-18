@@ -2,6 +2,17 @@
 
 void CInventoryComponent::Initialize()
 {
+	//Get the UI elements and actions
+	m_pUIInventory = gEnv->pFlashUI->GetUIElement("Inventory");
+	m_pInventoryShow = gEnv->pFlashUI->GetUIAction("inventoryshow");
+	m_pInventoryHide = gEnv->pFlashUI->GetUIAction("inventoryhide");
+
+	m_pInventoryShowCursor = gEnv->pFlashUI->GetUIAction("inventoryshowcursor");
+	m_pInventoryHideCursor = gEnv->pFlashUI->GetUIAction("inventoryhidecursor");
+	m_pManager = gEnv->pFlashUI->GetUIActionManager();
+
+	m_pUIInventory->CallFunction("Initialize");
+	m_pManager->StartAction(m_pInventoryHide, "Inventory");
 }
 
 uint64 CInventoryComponent::GetEventMask() const
@@ -221,6 +232,18 @@ void CInventoryComponent::AttachToHand(SItemComponent * pItemToAttach)
 		}
 	}
 
+}
+
+//Shows the inventory UI
+void CInventoryComponent::Show()
+{
+	//Freeze the player
+	{
+		SUIArguments args;
+		args.AddArgument<bool>(m_InventoryOpen);
+
+		
+	}
 }
 
 //Gets the weapon in the hand
